@@ -208,15 +208,58 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
     ]
 
     LAYOUT_0200 = [
-        "REG", "COD_ITEM", "DESCR_ITEM", "COD_BARRA", "COD_ANT_ITEM", "UNID_INV",
-        "TIPO_ITEM", "COD_NCM", "EX_IPI", "COD_GEN", "COD_LST", "ALIQ_ICMS", "CEST"
+        "REG", 
+        "COD_ITEM", 
+        "DESCR_ITEM", 
+        "COD_BARRA", 
+        "COD_ANT_ITEM", 
+        "UNID_INV",
+        "TIPO_ITEM", 
+        "COD_NCM", 
+        "EX_IPI", 
+        "COD_GEN", 
+        "COD_LST", 
+        "ALIQ_ICMS", 
+        "CEST",
+    ]
+
+    #Feito por Breno
+    LAYOUT_0205 = [
+        "REG", 
+        "DESCR_ANT_ITEM", 
+        "DT_INI", 
+        "DT_FIM", 
+        "COD_ANT_ITEM",
+    ]
+
+    #Feito por Breno
+    LAYOUT_0206 = [
+        "REG", 
+        "COD_COMB",
+    ]
+
+    #Feito por Breno
+    LAYOUT_0210 = [
+        "REG", 
+        "COD_ITEM_COMP",
+        "QTD_COMP",
+        "PERDA",
     ]
 
     LAYOUT_0220 = [
         "REG",
         "UNID_CONV",
         "FAT_CONV",
+        "COD_BARRA", #BRENO: FALTOU O COD_BARRA
     ]
+
+    #Feito por Breno
+    LAYOUT_0221 = [
+        "REG", 
+        "COD_ITEM_ATOMICO",
+        "QTD_CONTIDA",
+    ]
+
 
     LAYOUT_0300 = [
         "REG",
@@ -225,6 +268,7 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
         "DESCR_ITEM",
         "COD_PRNC",
         "COD_CTA",
+        "NR_PARC", #BRENO: FALTOU O NR_PARC
     ]
 
     LAYOUT_0305 = [
@@ -277,6 +321,159 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
     LAYOUT_B001 = [
         "REG",
         "IND_DAD",
+    ]
+
+    LAYOUT_B001 = [
+        "REG",
+        "IND_DAD",
+    ]
+
+    #Feito por Breno
+    LAYOUT_B020 = [
+        "REG",
+        "IND_OPER",
+        "IND_EMIT",
+        "COD_PART",
+        "COD_MOD",
+        "COD_SIT",
+        "SER",
+        "NUM_DOC",
+        "CHV_NFE",
+        "DT_DOC",
+        "COD_MUN_SERV",
+        "VL_CONT",
+        "VL_MAT_TERC",
+        "VL_SUB",
+        "VL_ISNT_ISS",
+        "VL_DED_BC",
+        "VL_BC_ISS",
+        "VL_BC_ISS_RT",
+        "VL_ISS_RT",
+        "VL_ISS",
+        "COD_INF_OBS",
+    ]
+
+    #Feito por Breno
+    LAYOUT_B025 = [
+        "REG",
+        "VL_CONT_P",
+        "VL_BC_ISS_P",
+        "ALIQ_ISS",
+        "VL_ISS_P",
+        "VL_ISNT_ISS_P",
+        "COD_SERV",
+    ]
+
+
+    #Feito por Breno
+    LAYOUT_B030 = [
+        "REG",
+        "COD_MOD",
+        "SER",
+        "NUM_DOC_INI",
+        "NUM_DOC_FIN",
+        "DT_DOC",
+        "QRT_CANC",
+        "VL_CONT",
+        "VL_ISNT_ISS",
+        "VL_BC_ISS",
+        "VL_ISS",
+        "COD_INF_OBS",
+    ]
+
+    #Feito por Breno
+    LAYOUT_B035 = [
+        "REG",
+        "VL_CONT_P",
+        "VL_BC_ISS_P",
+        "ALIQ_ISS",
+        "VL_ISS_P",
+        "VL_ISNT_ISS_P",
+        "COD_SERV",
+    ]
+
+    #Feito por Breno
+    LAYOUT_B350 = [
+        "REG",
+        "COD_CTD",
+        "CTA_ISS",
+        "CTA_COSIF",
+        "QTD_OCOR",
+        "COD_SERV",
+        "VL_CONT",
+        "VL_BC_ISS",
+        "ALIQ_ISS",
+        "VL_ISS",
+        "COD_INF_OBS",
+    ]
+    #Feito por Breno
+    LAYOUT_B420 = [
+        "REG",
+        "VL_CONT",
+        "VL_BC_ISS",
+        "ALIQ_ISS",
+        "VL_ISNT_ISS",
+        "VL_ISS",
+        "COD_SERV",
+    ]
+
+    #Feito por Breno
+    LAYOUT_B440 = [
+        "REG",
+        "IND_OPER",
+        "COD_PART",
+        "VL_CONT_RT",
+        "VL_BC_ISS_RT",
+        "VL_ISS_RT",
+    ]
+
+    #Feito por Breno
+    LAYOUT_B460 = [
+        "REG",
+        "IND_DED",
+        "VL_DED",
+        "NUM_PROC",
+        "IND_PROC",
+        "PROC",
+        "COD_INF_OBS",
+        "IND_OBR",
+    ]
+
+    #Feito por Breno
+    LAYOUT_B470 = [
+        "REG",
+        "VL_CONT",
+        "VL_MAT_TEC",
+        "VL_MAT_PROP",
+        "VL_SUB",
+        "VL_ISNT",
+        "VL_DED_BC",
+        "VL_BC_ISS",
+        "VL_BC_ISS_RT",
+        "VL_ISS",
+        "VL_ISS_RT",
+        "VL_DED",
+        "VL_ISS_REC",
+        "VL_ISS_ST"
+        "VL_ISS_REC_UNI",
+    ]
+
+     #Feito por Breno
+    LAYOUT_B500 = [
+        "REG",
+        "VL_REC",
+        "QTD_PROF",
+        "VL_OR,"
+    ]
+
+    #Feito por Breno
+    LAYOUT_B510 = [
+        "REG",
+        "IND_PROF",
+        "IND_ESC",
+        "IND_SOC",
+        "CPF",
+        "NOME",
     ]
 
     LAYOUT_B990 = [
@@ -353,13 +550,26 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
         "NUM_DOC",
         "DT_DOC",
     ]
+    #Feito por Breno
+    LAYOUT_C115 = [
+        "REG",
+        "IND_CARGA",
+        "CNPJ_COL",
+        "IE_COL",
+        "CPF_COL",
+        "COD_MUN_COL",
+        "CNPJ_ENTG",
+        "IE_ENTG",
+        "CPF_ENTG",
+        "COD_MUN_ENTG",
+    ]
 
     LAYOUT_C116 = [
         "REG",
         "COD_MOD",
-        "NR_SAT_OU_IDENT",
-        "CHV_DOCe",
-        "NUM_DOC",
+        "NR_SAT", #BRENO: O REGISTRO ESTAVA COM O NOME ERRADO, NN SEI SE INFLUENCIA
+        "CHV_CFE",#BRENO: O REGISTRO ESTAVA COM O NOME ERRADO, NN SEI SE INFLUENCIA
+        "NUM_CFE",
         "DT_DOC",
     ]
 
@@ -369,8 +579,116 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
         "NUM_DOC_IMP",
         "PIS_IMP",
         "COFINS_IMP",
-        "OUTROS_1",
-        "OUTROS_2",
+        "NUM_ACDRAW", #BRENO: O REGISTRO ESTAVA COM O NOME ERRADO, NN SEI SE INFLUENCIA
+    ]
+    #Feito por Breno
+    LAYOUT_C130 = [
+        "REG",
+        "VL_SERV_NT",
+        "VL_BC_ISSQN",
+        "VL_ISSQN",
+        "VL_BC_IRRF",
+        "VL_IRRF",
+        "VL_BC_PREV",
+        "VL_PREV"
+    ]
+
+    #Feito por Breno
+    LAYOUT_C140 = [
+        "REG",
+        "IND_EMIT",
+        "IND_TIT",
+        "DESC_TIT",
+        "NUM_TIT",
+        "QTD_PARC",
+        "VL_TIT",
+    ]
+
+    #Feito por Breno
+    LAYOUT_C141 = [
+        "REG",
+        "NUM_PARC",
+        "DT_VCTO",
+        "VL_PARC",
+    ]
+
+    #Feito por Breno
+    LAYOUT_C160 = [
+        "REG",
+        "COD_PART",
+        "VEIC_ID",
+        "QTD_VOL",
+        "PESO_BRT",
+        "PESO_LIQ",
+        "UF_ID",
+    ]
+
+    #Feito por Breno
+    LAYOUT_C165 = [
+        "REG",
+        "COD_PART",
+        "VEIC_ID",
+        "COD_AUT",
+        "NR_PASSE",
+        "HORA",
+        "TEMPER",
+        "QTD_VOL",
+        "PESO_BRT",
+        "PESO_LIQ",
+        "NOM_MOT",
+        "CPF",
+        "UF_ID",
+    ]
+    LAYOUT_C170 = [
+        "REG","NUM_ITEM","COD_ITEM","DESCR_COMPL","QTD","UNID","VL_ITEM","VL_DESC","IND_MOV",
+        "CST_ICMS","CFOP","COD_NAT","VL_BC_ICMS","ALIQ_ICMS","VL_ICMS","VL_BC_ICMS_ST","ALIQ_ST",
+        "VL_ICMS_ST","IND_APUR","CST_IPI","COD_ENQ","VL_BC_IPI","ALIQ_IPI","VL_IPI",
+        "CST_PIS","VL_BC_PIS","ALIQ_PIS","QUANT_BC_PIS","ALIQ_PIS_R","VL_PIS",
+        "CST_COFINS","VL_BC_COFINS","ALIQ_COFINS","QUANT_BC_COFINS","ALIQ_COFINS_R","VL_COFINS",
+        "COD_CTA","VL_ABAT_NT"#BRENO: O REGISTRO ESTAVA SEM O VL_ABAT_NT
+    ]
+
+    #Feito por Breno
+    LAYOUT_C171 = [
+        "REG",
+        "NUM_TANQUE",
+        "QTDE",
+    ]
+
+    #Feito por Breno
+    LAYOUT_C172 = [
+        "REG",
+        "VL_BC_ISSQN",
+        "ALIQ_ISSQN",
+        "VL_ISSQN",
+    ]
+    #Feito por Breno
+    LAYOUT_C173 = [
+        "REG",
+        "LOTE_MED",
+        "QTD_ITEM",
+        "DT_FAB",
+        "DT_VAL",
+        "IND_MED",
+        "TP_PROD",
+        "VL_TAB_MAX",
+    ]
+
+    #Feito por Breno
+    LAYOUT_C174 = [
+        "REG",
+        "IND_ARM",
+        "NUM_ARM",
+        "DESCR_COMPL",
+    ]
+
+    #Feito por Breno
+    LAYOUT_C175 = [
+        "REG",
+        "IND_VEIC_OPER",
+        "CNPJ",
+        "UF",
+        "CHASSI_VEIC",
     ]
 
     LAYOUT_C176 = [
@@ -402,18 +720,77 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
         "NUM_DA",
         "VL_UNIT_RES_FCP_ST",
     ]
-
+    #Feito por Breno
     LAYOUT_C177 = [
         "REG",
-        "CAMPO_01",
+        "COD_SELO_IPI",
+        "QT_SELO_IPI",
+    ]
+    #Feito por Breno
+    LAYOUT_C178 = [
+        "REG",
+        "CL_ENQ",
+        "VL_UNID",
+        "QUANT_PAD",
+    ]
+    #Feito por Breno
+    LAYOUT_C179 = [
+        "REG",
+        "BC_ST_ORIG_DEST",
+        "ICMS_ST_REP",
+        "ICMS_ST_COMPL",
+        "BC_RET",
+        "ICMS_RET",
     ]
 
+    LAYOUT_C180 = [
+        "REG",
+        "COD_RESP_RET",
+        "QUANT_CONV",
+        "UNID",
+        "VL_UNIT_CONV",
+        "VL_UNIT_ICMS_OP_CONV",
+        "VL_UNIT_BC_ICMS_ST_CONV",
+        "VL_UNIT_ICMS_ST_CONV",
+        "VL_UNIT_FCP_ST_CONV",
+        "COD_DA",
+        "NUM_DA",
+    ]
+    #Feito por Breno
+    LAYOUT_C181 = [
+        "REG",
+        "COD_MOT_REST_COMPL",
+        "QUANT_CONV",
+        "UNID",
+        "COD_MOD_SAIDA",
+        "SERIE_SAIDA",
+        "ECF_FAB_SAIDA",
+        "NUM_DOC_SAIDA",
+        "CHV_DFE_SAIDA",
+        "DT_DOC_SAIDA",
+        "NUM_ITEM_SAIDA",
+        "VL_UNIT_CONV_SAIDA",
+        "VL_UNIT_ICMS_OP_ESTOQUE_CONV_SAIDA",
+        "VL_UNIT_ICMS_ST_ESTOQUE_CONV_SAIDA",
+        "VL_UNIT_FCP_ICMS_ST_ESTOQUE_CONV_SAIDA",
+        "VL_UNIT_ICMS_NA_OPERACAO_CONV_SAIDA",
+        "VL_UNIT_ICMS_OP_CONV_SAIDA",
+        "VL_UNIT_ICMS_ST_CONV_REST",
+        "VL_UNIT_FCP_ST_CONV_REST",
+        "VL_UNIT_ICMS_ST_CONV_COMPL",
+        "VL_UNIT_FCP_ST_CONV_COMPL",
+    ]
+    #Feito por Breno
     LAYOUT_C185 = [
         "REG",
+        "NUM_ITEM",
+        "COD_ITEM",
         "CST_ICMS",
         "CFOP",
-        "COD_ITEM",
-        "COD_NCM",
+        "COD_MOT_REST_COMPL",
+        "QUANT_CONV",
+        "UNID",
+        "VL_UNIT_CONV",
         "VL_UNIT_ICMS_NA_OPERACAO_CONV",
         "VL_UNIT_ICMS_OP_CONV",
         "VL_UNIT_ICMS_OP_ESTOQUE_CONV",
@@ -424,19 +801,27 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
         "VL_UNIT_ICMS_ST_CONV_COMPL",
         "VL_UNIT_FCP_ST_CONV_COMPL",
     ]
-
+    #Feito por Breno
     LAYOUT_C186 = [
         "REG",
-        "NUM_DOC",
-        "COD_MOD",
-        "SER",
-        "DT_DOC",
+        "NUM_ITEM",
         "COD_ITEM",
-        "VL_UNIT_ICMS_OP_CONV",
-        "VL_UNIT_ICMS_OP_ESTOQUE_CONV",
-        "VL_UNIT_ICMS_ST_ESTOQUE_CONV",
-        "VL_UNIT_FCP_ICMS_ST_ESTOQUE_CONV",
-        "CHV_NFE",
+        "CST_ICMS",
+        "CFOP",
+        "COD_MOT_REST_COMPL",
+        "QUANT_CONV",
+        "UNID",
+        "COD_MOD_ENTRADA",
+        "SERIE_ENTRADA",
+        "NUM_DOC_ENTRADA",
+        "CHV_DFE_ENTRADA",
+        "DT_DOC_ENTRADA",
+        "NUM_ITEM_ENTRADA",
+        "VL_UNIT_CONV_ENTRADA",
+        "VL_UNIT_ICMS_OP_CONV_ENTRADA",
+        "VL_UNIT_BC_ICMS_ST_CONV_ENTRADA",
+        "VL_UNIT_ICMS_ST_CONV_ENTRADA",
+        "VL_UNIT_FCP_ST_CONV_ENTRADA",
     ]
 
     LAYOUT_C190 = [
@@ -477,7 +862,74 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
         "VL_ICMS",
         "VL_OUTROS",
     ]
+  
+    #Feito por Breno
+    LAYOUT_C300 = [
+        "REG",
+        "COD_MOD",
+        "SER",
+        "SUB",
+        "NUM_DOC_INI",
+        "NUM_DOC_FIN",
+        "DT_DOC",
+        "VL_DOC",
+        "VL_PIS",
+        "VL_COFINS",
+        "COD_CTA",
+    ]
 
+     #Feito por Breno
+    LAYOUT_C310 = [
+        "REG",
+        "NUM_DOC_CANC",
+    ]
+
+    #Feito por Breno
+    LAYOUT_C320 = [
+        "REG",
+        "CST_ICMS",
+        "CFOP",
+        "ALIQ_ICMS",
+        "VL_OPR",
+        "VL_BC_ICMS",
+        "VL_ICMS",
+        "VL_RED_BC",
+        "COD_OBS",
+    ]
+
+    #Feito por Breno
+    LAYOUT_C321 = [
+        "REG",
+        "COD_ITEM",
+        "QTD",
+        "UNID",
+        "VL_ITEM",
+        "VL_DESC",
+        "VL_BC_ICMS",
+        "VL_ICMS",
+        "VL_PIS",
+        "VL_COFINS",
+    ]
+
+    #Feito por Breno
+    LAYOUT_C330 = [
+        "REG",
+        "COD_MOT_REST_COMPL",
+        "QUANT_CONV",
+        "UNID",
+        "VL_UNIT_CONV",
+        "VL_UNIT_ICMS_NA_OPERACAO_CONV",
+        "VL_UNIT_ICMS_OP_CONV",
+        "VL_UNIT_ICMS_OP_ESTOQUE_CONV",
+        "VL_UNIT_ICMS_ST_ESTOQUE_CON",
+        "VL_UNIT_FCP_ICMS_ST_ESTOQUE_CONV",
+        "VL_UNIT_ICMS_ST_CONV_REST",
+        "VL_UNIT_FCP_ST_CONV_REST",
+        "VL_UNIT_ICMS_ST_CONV_COMPL",
+        "VL_UNIT_FCP_ST_CONVs_COMPL",
+    ]
+
+    #Feito por Breno
     LAYOUT_C350 = [
         "REG",
         "SER",
@@ -487,6 +939,7 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
         "CNPJ_CPF",
         "VL_MERC",
         "VL_DOC",
+        "VL_DESC",
         "VL_PIS",
         "VL_COFINS",
         "COD_CTA",
@@ -502,16 +955,24 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
         "VL_DESC",
     ]
 
+    #Feito por Breno
     LAYOUT_C380 = [
         "REG",
-        "COD_ITEM",
-        "VL_UNIT",
-        "QUANT",
-        "VL_DOC",
-        "VL_DESC",
-        "VL_PIS",
-        "VL_COFINS",
-        "COD_CTA",
+        "COD_MOT_REST_COMPL",
+        "QUANT_CONV",
+        "UNID",
+        "VL_UNIT_CONV",
+        "VL_UNIT_ICMS_NA_OPERACAO_CONV",
+        "VL_UNIT_ICMS_OP_CONV",
+        "VL_UNIT_ICMS_OP_ESTOQUE_CONV",
+        "VL_UNIT_ICMS_ST_ESTOQUE_CONV",
+        "VL_UNIT_FCP_ICMS_ST_ESTOQUE_CONV",
+        "VL_UNIT_ICMS_ST_CONV_REST",
+        "VL_UNIT_FCP_ST_CONV_REST",
+        "VL_UNIT_ICMS_ST_CONV_COMPL",
+        "VL_UNIT_FCP_ST_CONV_COMPL",
+        "CST_ICMS",
+        "CFOP",
     ]
 
     LAYOUT_C390 = [
@@ -558,6 +1019,38 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
         "DESCR_NR_TOT",
     ]
 
+    #Feito por Breno
+    LAYOUT_C425 = [
+        "REG",
+        "COD_ITEM",
+        "QTD",
+        "UNID",
+        "VL_ITEM",
+        "VL_PIS",
+        "VL_COFINS",
+    ]
+
+    #Feito por Breno
+    LAYOUT_C430 = [
+        "REG",
+        "COD_MOT_REST_COMPL",
+        "QUANT_CONV",
+        "UNID",
+        "VL_UNIT_CONV",
+        "VL_UNIT_ICMS_NA_OPERACAO_CONV",
+        "VL_UNIT_ICMS_OP_CONV",
+        "VL_UNIT_ICMS_OP_ESTOQUE_CONV",
+        "VL_UNIT_ICMS_ST_ESTOQUE_CONV",
+        "VL_UNIT_FCP_ICMS_ST_ESTOQUE_CONV",
+        "VL_UNIT_ICMS_ST_CONV_REST",
+        "VL_UNIT_FCP_ST_CONV_REST",
+        "VL_UNIT_ICMS_ST_CONV_COMPL",
+        "VL_UNIT_FCP_ST_CONV_COMPL",
+        "CST_ICMS",
+        "CFOP",
+    ]
+
+    #Feito por Breno
     LAYOUT_C460 = [
         "REG",
         "COD_MOD",
@@ -571,6 +1064,14 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
         "NOM_ADQ",
     ]
 
+    #Feito por Breno
+    LAYOUT_C465 = [
+        "REG",
+        "CHV_CFE",
+        "NUM_CCF",
+    ] 
+
+    #Feito por Breno
     LAYOUT_C470 = [
         "REG",
         "COD_ITEM",
@@ -581,20 +1082,27 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
         "CST_ICMS",
         "CFOP",
         "ALIQ_ICMS",
-        "VL_BC_ICMS",
-        "VL_ICMS",
-        "COD_OBS",
+        "VL_PIS",
+        "VL_COFINS",
     ]
 
     LAYOUT_C480 = [
         "REG",
+        "COD_MOT_REST_COMPL",
+        "QUANT_CONV",
+        "UNID",
+        "VL_UNIT_CONV",
+        "VL_UNIT_ICMS_NA_OPERACAO_CONV",
+        "VL_UNIT_ICMS_OP_CONV",
+        "VL_UNIT_ICMS_OP_ESTOQUE_CONV",
+        "VL_UNIT_ICMS_ST_ESTOQUE_CONV",
+        "VL_UNIT_FCP_ICMS_ST_ESTOQUE_CONV",
+        "VL_UNIT_ICMS_ST_CONV_REST",
+        "VL_UNIT_FCP_ST_CONV_REST",
+        "VL_UNIT_ICMS_ST_CONV_COMPL",
+        "VL_UNIT_FCP_ST_CONV_COMPL",
         "CST_ICMS",
         "CFOP",
-        "ALIQ_ICMS",
-        "VL_OPR",
-        "VL_BC_ICMS",
-        "VL_ICMS",
-        "COD_OBS",
     ]
 
     LAYOUT_C490 = [
@@ -605,16 +1113,59 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
         "VL_OPR",
         "VL_BC_ICMS",
         "VL_ICMS",
-        "VL_RED_BC",
         "COD_OBS",
     ]
 
-    LAYOUT_C500 = [
-        "REG","IND_OPER","IND_EMIT","COD_PART","COD_MOD","COD_SIT","SER","SUB","NUM_DOC",
-        "DT_DOC","DT_E_S","VL_DOC","VL_DESC","VL_FORN","VL_SERV_NT","VL_TERC","VL_DA",
-        "VL_BC_ICMS","VL_ICMS","VL_BC_ICMS_ST","VL_ICMS_ST","COD_INF","VL_PIS","VL_COFINS",
+    LAYOUT_C495 = [
+        "REG",
+        "ALIQ_ICMS",
+        "COD_ITEM",
+        "QTD",
+        "QTD_CANC",
+        "UNID",
+        "VL_ITEM",
+        "VL_DESC",
+        "VL_CANC",
+        "VL_ACMO",
+        "VL_BC_ICMS",
+        "VL_ICMS",
+        "VL_ISEN",
+        "VL_NT",
+        "VL_ICMS_ST",
     ]
 
+
+    LAYOUT_C500 = [
+        "REG","IND_OPER","IND_EMIT","COD_PART","COD_MOD","COD_SIT","SER","SUB","COD_CONS","NUM_DOC",
+        "DT_DOC","DT_E_S","VL_DOC","VL_DESC","VL_FORN","VL_SERV_NT","VL_TERC","VL_DA",
+        "VL_BC_ICMS","VL_ICMS","VL_BC_ICMS_ST","VL_ICMS_ST","COD_INF","VL_PIS","VL_COFINS","TP_LIGACAO", "COD_GRUPO_TENSAO","CHV_DOCe",
+        "FIN_DOCe","CHV_DOCe_REF","IND_DEST","COD_MUN_DEST","COD_CTA","COD_MOD_DOC_REF","HASH_DOC_REF","SER_DOC_REF","NUM_DOC_REF","MES_DOC_REF","ENER_INJET","OUTRAS_DED"
+    ]
+
+    LAYOUT_C510 = [
+        "REG",
+        "NUM_ITEM",
+        "COD_ITEM",
+        "COD_CLASS",
+        "QTD",
+        "UNID",
+        "VL_ITEM",
+        "VL_DESC",
+        "CST_ICMS",
+        "CFOP",
+        "VL_BC_ICMS",
+        "ALIQ_ICMS",
+        "VL_ICMS",
+        "VL_BC_ICMS_ST",
+        "ALIQ_ST",
+        "VL_ICMS_ST",
+        "IND_REC",
+        "COD_PART",
+        "VL_PIS",
+        "VL_COFINS",
+        "COD_CTA",
+    ]
+    #Feito por Breno
     LAYOUT_C590 = [
         "REG",
         "CST_ICMS",
@@ -633,7 +1184,6 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
         "REG",
         "VL_FCP_OP",
         "VL_FCP_ST",
-        "VL_FCP_RET",
     ]
 
     LAYOUT_C595 = [
@@ -646,12 +1196,77 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
         "REG",
         "COD_AJ",
         "DESCR_COMPL_AJ",
+        "COD_ITEM",
         "VL_BC_ICMS",
         "ALIQ_ICMS",
         "VL_ICMS",
         "VL_OUTROS",
     ]
 
+    LAYOUT_C600 = [
+        "REG",
+        "COD_MOD",
+        "COD_MUN",
+        "SER",
+        "SUB",
+        "COD_CONS",
+        "QTD_CONS",
+        "QTD_CANC",
+        "DT_DOC",
+        "VL_DOC",
+        "VL_DESC",
+        "CONS",
+        "VL_FORN",
+        "VL_SERV_NT",
+        "VL_TERC",
+        "VL_DA",
+        "VL_BC_ICMS",
+        "VL_ICMS",
+        "VL_BC_ICMS_ST",
+        "VL_ICMS_ST",
+        "VL_PIS",
+        "VL_COFINS",
+    ]
+    #Feito por Breno
+    LAYOUT_C601 = [
+        "REG",
+        "NUM_DOC_CANC",
+    ]
+    #Feito por Breno
+    LAYOUT_C610 = [
+        "REG",
+        "COD_CLASS",
+        "COD_ITEM",
+        "QTD",
+        "UNID",
+        "VL_ITEM",
+        "VL_DESC",
+        "CST_ICMS",
+        "CFOP",
+        "ALIQ_ICMS",
+        "VL_BC_ICMS",
+        "VL_ICMS",
+        "VL_BC_ICMS_ST",
+        "VL_ICMS_ST",
+        "VL_PIS",
+        "VL_COFINS",
+        "COD_CTA",
+    ]
+    #Feito por Breno
+    LAYOUT_C690 = [
+        "REG",
+        "CST_ICMS",
+        "CFOP",
+        "ALIQ_ICMS",
+        "VL_OPR",
+        "VL_BC_ICMS",
+        "VL_ICMS",
+        "VL_RED_BC",
+        "VL_BC_ICMS_ST",
+        "VL_ICMS_ST",
+        "COD_OBS",
+    ]
+    #Feito por Breno
     LAYOUT_C700 = [
         "REG",
         "COD_MOD",
@@ -660,10 +1275,10 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
         "NRO_ORD_FIN",
         "DT_DOC_INI",
         "DT_DOC_FIN",
-        "VL_DOC",
-        "VL_DESC",
+        "NOM_MEST",
+        "CHV_COD_DIG",
     ]
-
+    #Feito por Breno
     LAYOUT_C790 = [
         "REG",
         "CST_ICMS",
@@ -677,14 +1292,14 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
         "VL_RED_BC",
         "COD_OBS",
     ]
-
+    #Feito por Breno
     LAYOUT_C791 = [
         "REG",
         "UF",
-        "VL_FCP",
-        "VL_ICMS",
+        "VL_BC_ICMS_ST",
+        "VL_ICMS_ST",
     ]
-
+    #Feito por Breno
     LAYOUT_C800 = [
         "REG",
         "COD_MOD",
@@ -694,33 +1309,43 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
         "VL_CFE",
         "VL_PIS",
         "VL_COFINS",
+        "CNPJ_CPF",
+        "NR_SAT",
         "CHV_CFE",
-        "CPF_CNPJ",
-        "NOM_ADQ",
+        "VL_DESC",
+        "VL_MERC",
+        "VL_OUT_DA",
+        "VL_ICMS",
+        "VL_PIS_ST",
+        "VL_COFINS_ST",
     ]
-
+    #Feito por Breno
     LAYOUT_C810 = [
         "REG",
-        "CFOP",
-        "VL_OPR",
-        "VL_DESC",
+        "NUM_ITEM",
+        "COD_ITEM",
+        "QTD",
+        "UNID",
+        "VL_ITEM",
         "CST_ICMS",
-        "VL_BC_ICMS",
-        "ALIQ_ICMS",
-        "VL_ICMS",
-        "COD_OBS",
+        "CFOP",
     ]
-
+    #Feito por Breno
     LAYOUT_C815 = [
         "REG",
-        "CST_PIS",
-        "VL_BC_PIS",
-        "ALIQ_PIS",
-        "VL_PIS",
-        "CST_COFINS",
-        "VL_BC_COFINS",
-        "ALIQ_COFINS",
-        "VL_COFINS",
+        "COD_MOT_REST_COMPL",
+        "QUANT_CONV",
+        "UNID",
+        "VL_UNIT_CONV",
+        "VL_UNIT_ICMS_NA_OPERACAO_CONV",
+        "VL_UNIT_ICMS_OP_CONV",
+        "VL_UNIT_ICMS_OP_ESTOQUE_CONV",
+        "VL_UNIT_ICMS_ST_ESTOQUE_CONV",
+        "VL_UNIT_FCP_ICMS_ST_ESTOQUE_CONV",
+        "VL_UNIT_ICMS_ST_CONV_REST",
+        "VL_UNIT_FCP_ST_CONV_REST",
+        "VL_UNIT_ICMS_ST_CONV_COMPL",
+        "VL_UNIT_FCP_ST_CONV_COMPL",
     ]
 
     LAYOUT_C850 = [
@@ -733,7 +1358,85 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
         "VL_ICMS",
         "COD_OBS",
     ]
+    #Feito por Breno
+    LAYOUT_C855 = [
+        "REG",
+        "COD_OBS",
+        "TXT_COMPL",
+    ]
 
+    #Feito por Breno
+    LAYOUT_C857 = [
+        "REG",
+        "COD_AJ",
+        "DESCR_COMPLE_AJ",
+        "COD_ITEM",
+        "VL_BC_ICMS",
+        "ALIQ_ICMS",
+        "VL_ICMS",
+        "VL_OUTROS",
+    ]
+
+    #Feito por Breno
+    LAYOUT_C860 = [
+        "REG",
+        "COD_MOD",
+        "NR_SAT",
+        "DT_DOC",
+        "DOC_INI",
+        "DOC_FIM",
+    ]
+
+    #Feito por Breno
+    LAYOUT_C870 = [
+        "REG",
+        "COD_ITEM",
+        "QTD",
+        "UNID",
+        "CFOP",
+        "CST_ICMS",
+    ]
+
+    #Feito por Breno
+    LAYOUT_C880 = [
+        "REG",
+        "COD_ITEM",
+        "QTD",
+        "UNID",
+        "CFOP",
+        "CST_ICMS",
+    ]
+    #Feito por Breno
+    LAYOUT_C890 = [
+        "REG",
+        "CST_ICMS",
+        "CFOP",
+        "ALIQ_ICMS",
+        "VL_OPR",
+        "VL_BC_ICMS",
+        "VL_ICMS",
+        "COD_OBS",
+    ]
+
+    #Feito por Breno
+    LAYOUT_C895 = [
+        "REG",
+        "COD_OBS",
+        "TXT_COMPL",
+    ]
+
+    #Feito por Breno
+    LAYOUT_C897 = [
+        "REG",
+        "COD_AJ",
+        "DESCR_COMPL_AJ",
+        "COD_ITEM",
+        "VL_BC_ICMS",
+        "ALIQ_ICMS",
+        "VL_ICMS",
+        "VL_OUTROS",
+    ]
+    
     LAYOUT_C990 = [
         "REG",
         "QTD_LIN_C",
@@ -743,22 +1446,189 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
         "REG",
         "IND_MOV",
     ]
-
-    # Campos genéricos para complementos do bloco D (posicionais)
-    GENERIC_D_FIELDS = [
-        "CAMPO_01","CAMPO_02","CAMPO_03","CAMPO_04","CAMPO_05","CAMPO_06","CAMPO_07","CAMPO_08","CAMPO_09","CAMPO_10",
-        "CAMPO_11","CAMPO_12","CAMPO_13","CAMPO_14","CAMPO_15","CAMPO_16","CAMPO_17","CAMPO_18","CAMPO_19","CAMPO_20",
+    #Feito por Breno
+    LAYOUT_D100 = [
+        "REG",
+        "IND_OPER",
+        "IND_EMIT",
+        "COD_PART",
+        "COD_MOD",
+        "COD_SIT",
+        "SER",
+        "SUB",
+        "NUM_DOC",
+        "CHV_CTE",
+        "OC",
+        "DT_DOC",
+        "DT_A_P",
+        "TP_CT-e",
+        "CHV_CTE_REF",
+        "VL_DOC",
+        "VL_DESC",
+        "IND_FRT",
+        "VL_SERV",
+        "VL_BC_ICMS",
+        "VL_ICMS",
+        "VL_NT",
+        "COD_INF",
+        "COD_CTA",
+        "COD_MUN_ORIG",
+        "COD_MUN_DEST",
+    ]
+    #Feito por Breno
+    LAYOUT_D101 = [
+        "REG",
+        "VL_FCP_UF_DEST",
+        "VL_ICMS_UF_DEST",
+        "VL_ICMS_UF_REM",
     ]
 
-    LAYOUT_D130 = ["REG", *GENERIC_D_FIELDS]
-    LAYOUT_D140 = ["REG", *GENERIC_D_FIELDS]
-    LAYOUT_D150 = ["REG", *GENERIC_D_FIELDS]
-    LAYOUT_D160 = ["REG", *GENERIC_D_FIELDS]
-    LAYOUT_D161 = ["REG", *GENERIC_D_FIELDS]
-    LAYOUT_D162 = ["REG", *GENERIC_D_FIELDS]
-    LAYOUT_D170 = ["REG", *GENERIC_D_FIELDS]
-    LAYOUT_D180 = ["REG", *GENERIC_D_FIELDS]
+    #Feito por Breno
+    LAYOUT_D110 = [
+        "REG",
+        "NUM_ITEM",
+        "COD_ITEM",
+        "VL_SERV",
+        "VL_OUT",
+    ]
 
+    #Feito por Breno
+    LAYOUT_D120 = [
+        "REG",
+        "COD_MUN_ORIG",
+        "COD_MUN_DEST",
+        "VEIC_ID",
+        "UF_ID",
+    ]
+
+    #Feito por Breno
+    LAYOUT_D130 = [
+        "REG",
+        "COD_PART_CONSG",
+        "COD_PART_RED",
+        "IND_FRT_RED",
+        "COD_MUN_ORIG",
+        "COD_MUN_DEST",
+        "VEIC_ID",
+        "VL_LIQ_FRT",
+        "VL_SEC_CAT",
+        "VL_DESP",
+        "VL_PEDG",
+        "VL_OUT",
+        "VL_FRT",
+        "UF_ID",
+    ]
+
+    #Feito por Breno
+    LAYOUT_D140 = [
+        "REG",
+        "COD_PART_CONSG",
+        "COD_MUN_ORIG",
+        "COD_MUN_DEST",
+        "IND_VEIC",
+        "VEIC_ID",
+        "IND_NAV",
+        "VIAGEM",
+        "VL_FRT_LIQ",
+        "VL_DESP_PORT",
+        "VL_DESP_CAR_DESC",
+        "VL_OUT",
+        "VL_FRT_BRT",
+        "VL_FRT_MM",
+    ]
+
+    #Feito por Breno
+    LAYOUT_D150 = [
+        "REG",
+        "COD_MUN_ORIG",
+        "COD_MUN_DEST",
+        "VEIC_ID",
+        "VIAGEM",
+        "IND_TFA",
+        "VL_PESO_TX",
+        "VL_TX_TERR",
+        "VL_TX_RED",
+        "VL_OUT",
+        "VL_TX_ADV",
+    ]
+
+    #Feito por Breno
+    LAYOUT_D160 = [
+        "REG",
+        "DESPACHO",
+        "CNPJ_CPF_REM",
+        "IE_REM",
+        "COD_MUN_ORI",
+        "CNPJ_CPF_DEST",
+        "IE_DEST",
+        "COD_MUN_DEST",
+    ]
+
+    #Feito por Breno
+    LAYOUT_D161 = [
+        "REG",
+        "IND_CARGA",
+        "CNPJ_CPF_COL",
+        "IE_COL",
+        "COD_MUN_COL",
+        "CNPJ_CPF_ENTG",
+        "IE_ENTG",
+        "COD_MUN_ENTG",
+    ]
+
+    #Feito por Breno
+    LAYOUT_D162 = [
+        "REG",
+        "COD_MOD",
+        "SER",
+        "NUM_DOC",
+        "DT_DOC",
+        "VL_DOC",
+        "VL_MERC",
+        "QTD_VOL",
+        "PESO_BRT",
+        "PESO_LIQ",
+    ]
+    
+    #Feito por Breno
+    LAYOUT_D170 = [
+        "REG",
+        "COD_PART_CONSG",
+        "COD_PART_RED",
+        "COD_MUN_ORIG",
+        "COD_MUN_DEST",
+        "OTM",
+        "IND_NAT_FRT",
+        "VL_LIQ_FRT",
+        "VL_GRIS",
+        "VL_PDG",
+        "VL_OUT",
+        "VL_FRT",
+        "VEIC_ID",
+        "UF_ID",
+    ]
+    #Feito por Breno
+    LAYOUT_D180 = [
+        "REG",
+        "NUM_SEQ",
+        "IND_EMIT",
+        "CNPJ_CPF_EMIT",
+        "UF_EMIT",
+        "IE_EMIT",
+        "COD_MUN_ORIG",
+        "CNPJ_CPF_TOM",
+        "UF_TOM",
+        "IE_TOM",
+        "COD_MUN_DEST",
+        "COD_MOD",
+        "SER",
+        "SUB",
+        "NUM_DOC",
+        "DT_DOC",
+        "VL_DOC",
+    ]
+
+    #Feito por Breno
     LAYOUT_D190 = [
         "REG",
         "CST_ICMS",
@@ -770,13 +1640,14 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
         "VL_RED_BC",
         "COD_OBS",
     ]
-
+    #Feito por Breno
     LAYOUT_D195 = [
         "REG",
         "COD_OBS",
         "TXT_COMPL",
     ]
 
+    #Feito por Breno
     LAYOUT_D197 = [
         "REG",
         "COD_AJ",
@@ -788,6 +1659,7 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
         "VL_OUTROS",
     ]
 
+     #Feito por Breno
     LAYOUT_D300 = [
         "REG",
         "COD_MOD",
@@ -795,25 +1667,35 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
         "SUB",
         "NUM_DOC_INI",
         "NUM_DOC_FIN",
-        "DT_DOC",
-        "VL_DOC",
-        "VL_ICMS",
         "CST_ICMS",
         "CFOP",
+        "ALIQ_ICMS",
+        "DT_DOC",
+        "VL_OPR",
+        "VL_DESC",
+        "VL_SERV",
+        "VL_SEG",
+        "VL_OUT_DESP",
+        "VL_BC_ICMS",
+        "VL_ICMS",
+        "VL_RED_BC",
+        "COD_OBS",
+        "COD_CTA",
     ]
-
+     #Feito por Breno
     LAYOUT_D301 = [
         "REG",
         "NUM_DOC_CANC",
     ]
-
+     #Feito por Breno
     LAYOUT_D310 = [
         "REG",
         "COD_MUN_ORIG",
-        "COD_MUN_DEST",
-        "VL_DOC",
+        "VL_SERV",
+        "VL_BC_ICMS",
+        "VL_ICMS",
     ]
-
+     #Feito por Breno
     LAYOUT_D350 = [
         "REG",
         "COD_MOD",
@@ -821,45 +1703,52 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
         "ECF_FAB",
         "ECF_CX",
     ]
-
+     #Feito por Breno
     LAYOUT_D355 = [
         "REG",
         "DT_DOC",
-        "HR_DOC",
-        "COO_INI",
-        "COO_FIN",
-        "VL_BRT",
+        "CRO",
+        "CRZ",
+        "NUM_COO_FIN",
+        "GT_FIN",
+        "VL_BRT"
     ]
-
+     #Feito por Breno
     LAYOUT_D360 = [
         "REG",
-        "COD_MOD",
-        "CHV_DOC",
-        "VL_DOC",
-        "VL_ICMS",
-        "CST_ICMS",
-        "CFOP",
+        "VL_PIS",
+        "VL_COFINS",
     ]
-
+     #Feito por Breno
     LAYOUT_D365 = [
         "REG",
-        "NUM_ITEM",
-        "COD_ITEM",
-        "VL_ITEM",
+        "COD_TOT_PAR",
+        "VLR_ACUM_TOT",
+        "NR_TOT",
+        "DESCR_NR_TOT"
     ]
-
+    #Feito por Breno
     LAYOUT_D370 = [
         "REG",
-        "ECF_FAB",
-        "ECF_CX",
+        "COD_MUN_ORIG",
+        "VL_SERV",
+        "QTD_BILH",
+        "VL_BC_ICMS",
+        "VL_ICMS",
     ]
-
+    #Feito por Breno
     LAYOUT_D390 = [
         "REG",
-        "COD_MOD",
-        "NUM_DOC_INI",
-        "NUM_DOC_FIN",
-        "VL_DOC",
+        "CST_ICMS",
+        "CFOP",
+        "ALIQ_ICMS",
+        "VL_OPR",
+        "VL_BC_ISSQN",
+        "ALIQ_ISSQN",
+        "VL_ISSQN",
+        "VL_BC_ICMS",
+        "VL_ICMS",
+        "COD_OBS",
     ]
 
     LAYOUT_D400 = [
@@ -1712,14 +2601,7 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
         "QTD_LIN",
     ]
 
-    LAYOUT_C170 = [
-        "REG","NUM_ITEM","COD_ITEM","DESCR_COMPL","QTD","UNID","VL_ITEM","VL_DESC","IND_MOV",
-        "CST_ICMS","CFOP","COD_NAT","VL_BC_ICMS","ALIQ_ICMS","VL_ICMS","VL_BC_ICMS_ST","ALIQ_ST",
-        "VL_ICMS_ST","IND_APUR","CST_IPI","COD_ENQ","VL_BC_IPI","ALIQ_IPI","VL_IPI",
-        "CST_PIS","VL_BC_PIS","ALIQ_PIS","QUANT_BC_PIS","ALIQ_PIS_R","VL_PIS",
-        "CST_COFINS","VL_BC_COFINS","ALIQ_COFINS","QUANT_BC_COFINS","ALIQ_COFINS_R","VL_COFINS",
-        "COD_CTA"
-    ]
+    
 
     LAYOUT_D100 = [
         "REG","IND_OPER","IND_EMIT","COD_PART","COD_MOD","COD_SIT","SER","SUB","NUM_DOC","CHV_CTE",
@@ -3872,3 +4754,4 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
         "transportes_resumo": transportes_resumo,
         "contadores": contadores,
     } 
+    
