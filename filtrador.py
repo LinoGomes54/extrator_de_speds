@@ -2,7 +2,29 @@ import chardet
 import re
 import os
 import glob
+import sys
 from pathlib import Path
+
+import builtins
+
+
+def _safe_print(*args, **kwargs):
+    """
+    Evita UnicodeEncodeError em consoles Windows que não suportam emojis.
+    Substitui caracteres não representáveis por '?'.
+    """
+    encoding = getattr(sys.stdout, "encoding", None) or "utf-8"
+    safe_args = []
+    for arg in args:
+        if isinstance(arg, str):
+            safe_args.append(arg.encode(encoding, errors="replace").decode(encoding, errors="ignore"))
+        else:
+            safe_args.append(arg)
+    builtins.print(*safe_args, **kwargs)
+
+
+# Sobrescreve o print localmente neste módulo
+print = _safe_print
 
 def analisar_arquivo(nome_arquivo):
     print(f"Analisando arquivo: {nome_arquivo}")
@@ -98,14 +120,24 @@ def filtrar_linhas_especificas(conteudo, codigos_desejados):
     linhas_filtradas = []
     contadores = {codigo: 0 for codigo in codigos_desejados}
     total_linhas_originais = len(linhas)
+
+    # Pré-agrupa códigos por tamanho para acelerar a filtragem
+    codigos_por_tamanho = {}
+    for codigo in codigos_desejados:
+        codigos_por_tamanho.setdefault(len(codigo), set()).add(codigo)
+
     for linha in linhas:
         linha_limpa = linha.strip()
-        if linha_limpa:
-            for codigo in codigos_desejados:
-                if linha_limpa.startswith(codigo):
-                    linhas_filtradas.append(linha)
-                    contadores[codigo] += 1
-                    break
+        if not linha_limpa:
+            continue
+        for tamanho, codigos_set in codigos_por_tamanho.items():
+            if len(linha_limpa) < tamanho:
+                continue
+            prefixo = linha_limpa[:tamanho]
+            if prefixo in codigos_set:
+                linhas_filtradas.append(linha)
+                contadores[prefixo] += 1
+                break
     print(f"   📊 RESULTADO DO FILTRO:")
     print(f"      📝 Linhas originais: {total_linhas_originais:,}")
     print(f"      ✅ Linhas filtradas: {len(linhas_filtradas):,}")
