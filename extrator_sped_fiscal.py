@@ -3,6 +3,7 @@ from decimal import Decimal, InvalidOperation
 
 
 def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True):
+    print("Extrator Fiscal")
     """
     Extrai e estrutura registros SPED (0000, 0001, 0002, 0005, 0015, 0100,
     0150, 0175, 0190, 0200/0220, 0300/0305, 0400, 0450, 0460, 0500, 0600,
