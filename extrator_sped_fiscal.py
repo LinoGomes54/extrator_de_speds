@@ -324,11 +324,6 @@ def extrair_registros_sped(txt_ou_caminho: str, tratar_como_arquivo: bool = True
         "IND_DAD",
     ]
 
-    LAYOUT_B001 = [
-        "REG",
-        "IND_DAD",
-    ]
-
     #Feito por Breno
     LAYOUT_B020 = [
         "REG",
