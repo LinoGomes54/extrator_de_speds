@@ -16,11 +16,11 @@ EXTRAIR CÓDIGO - REG SPEDS FISCAL
 		3 - 0206 - Código de produto conforme Tabela publicada pela ANP 
 		3 - 0220 - Fatores de conversão de unidades
 		3 - 0221 - Correlação entre códigos de itens comercializados
+	2 - 0300 - Cadastro de bens ou componentes do Ativo Imobilizado
+		3 - 0305 - Informação sobre a utilização do bem
 	2 - 0400 - Tabela de Natureza da Operação/Prestação
 	2 - 0450 - Tabela de Informação Complementar do Documento Fiscal
 	2 - 0460 - Tabela de Observações do Lançamento Fiscal
-	2 - 0300 - Cadastro de bens ou componentes do Ativo Imobilizado
-		3 - 0305 - Informação sobre a utilização do bem
 	2 - 0500 - Plano de Contas Contábeis
 	2 - 0600 - Centro de Custos
    ### - 0990 - encerramento do Bloco 0
@@ -193,9 +193,6 @@ EXTRAIR CÓDIGO - REG SPEDS FISCAL
 		3 - D760 - Registro analítico da escrituração consolidada da Nota Fiscal Fatura Eletrônica de serviços de comunicação - NFCom (Código 62)
 			4 - D761 - Informações do Fundo de Combate à Pobreza – FCP – (Código 62)
 
-{X} - D200 - NÃO EXISTE NO SPED FISCAL
-{X} - D201 - NÃO EXISTE NO SPED FISCAL
-{X} - D205 - NÃO EXISTE NO SPED FISCAL
  ## - D990 - Fechamento do Bloco D
 # Bloco E
  ## - E001 - Abertura do Bloco E
@@ -212,7 +209,8 @@ EXTRAIR CÓDIGO - REG SPEDS FISCAL
 		3 - E210 - 	Apuração do ICMS - Substituição Tributária
 			4 - E220 - Ajuste/Benefício/Incentivo da Apuração do ICMS - Substituição Tributária
 				5 - E230 - Informações Adicionais dos Ajustes da Apuração do ICMS Substituição Tributária
-				5 - E240 - Informações Adicionais dos Ajustes da Apuração do ICMS Substituição Tributária - Identificação dos documentos fiscais
+
+				5 - E240 - Informações Adicionais dos Ajustes da Apuração do ICMS Substituição Tributária - Identificação dos documentos fiscais 
 			4 - E250 - 	Obrigações do ICMS Recolhido ou a Recolher - Substituição Tributária
  ### (ICMS diferencial alíquota origem/destino EC 87/15)
 	2 - E300 - Período de Apuração do ICMS Diferencial de Alíquota - UF Origem/Destino EC 87/15
@@ -220,7 +218,7 @@ EXTRAIR CÓDIGO - REG SPEDS FISCAL
 			4 - E311 - 	Ajuste/Benefício/Incentivo da Apuração do ICMS Diferencial de Alíquota - UF Origem/Destino EC 87/15
 				5 - E312 - 	Informações Adicionais dos Ajustes da Apuração do ICMS Diferencial de Alíquota - UF Origem/Destino EC 87/15
 				5 - E313 - Informações Adicionais da Apuração do ICMS Diferencial de Alíquota - UF Origem/Destino EC 87/15 Identificação dos Documentos Fiscais
-			4 - E316 - Obrigações do ICMS recolhido ou a recolher - Diferencial de Alíquota - UF Origem/Destino EC 87/15
+			4 - E316 - Obrigações do ICMS recolhido ou a recolher - Diferencial de Alíquota - UF Origem/Destino EC 87/15 
  ### (IPI)
 	2 - E500 - 	Período de Apuração do IPI
 		3 - E510 - Consolidação dos Valores de IPI
@@ -231,11 +229,11 @@ EXTRAIR CÓDIGO - REG SPEDS FISCAL
 # Bloco G
  ## - G001 - Abertura do Bloco G
  ### (ICMS - Ativo Permanente - CIAP)
-	- G110
-		- G125
-			- G126
-			- G130
-				- G140
+	2 - G110
+		3 - G125
+			4 - G126
+			4 - G130
+				5 - G140
  ## - G990 - Fechamento do Bloco G
 # Bloco H
  ## - H001 - Abertura do Bloco H

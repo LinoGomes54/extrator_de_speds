@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Navegação SPED Fiscal</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: #f0f2f5; padding: 20px; }
+        .container { max-width: 1400px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #2c3e50; margin-bottom: 10px; border-bottom: 3px solid #3498db; padding-bottom: 10px; }
+        .info { color: #7f8c8d; margin-bottom: 20px; }
+        .bloco { margin: 25px 0; border: 1px solid #e0e0e0; border-radius: 5px; overflow: hidden; }
+        .bloco-header { background: #3498db; color: white; padding: 15px; cursor: pointer; font-size: 1.2em; font-weight: bold; }
+        .bloco-header:hover { background: #2980b9; }
+        .bloco-content { padding: 15px; display: block; }
+        .bloco.collapsed .bloco-content { display: none; }
+        .registro { padding: 8px 5px; margin: 3px 0; border-left: 3px solid transparent; transition: all 0.2s; }
+        .registro:hover { background: #f8f9fa; border-left-color: #3498db; }
+        .nivel-0 { font-weight: bold; font-size: 1.1em; color: #2c3e50; }
+        .nivel-1 { margin-left: 25px; color: #34495e; }
+        .nivel-2 { margin-left: 50px; color: #5d6d7e; font-size: 0.95em; }
+        .nivel-3 { margin-left: 75px; color: #7f8c8d; font-size: 0.9em; }
+        .nivel-4 { margin-left: 100px; color: #95a5a6; font-size: 0.85em; }
+        .nivel-5 { margin-left: 125px; color: #b2babb; font-size: 0.8em; }
+        .nivel-6 { margin-left: 150px; color: #d5dbdb; font-size: 0.75em; }
+        a { color: #3498db; text-decoration: none; cursor: pointer; display: inline-block; padding: 2px 0; }
+        a:hover { color: #2980b9; text-decoration: underline; background: #f0f0f0; padding: 2px 4px; border-radius: 3px; }
+        .codigo { font-weight: bold; color: #e74c3c; margin-right: 5px; }
+        .sem-link { color: #95a5a6; }
+        .toggle { float: right; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📁 Navegação SPED Fiscal</h1>
+        <p class="info">Clique nos links para abrir as pastas. Clique nos cabeçalhos dos blocos para expandir/recolher.</p>
+<div class="bloco"><div class="bloco-header" onclick="toggleBloco(this)"><span>1 - Bloco 0</span><span class="toggle">▼</span></div><div class="bloco-content">
+<div class="registro nivel-0"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/1 - Bloco 0/0000'); return false;"><span class="codigo">0000</span>Informações do contribuinte</a></div>
+<div class="registro nivel-0"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/1 - Bloco 0/0001'); return false;"><span class="codigo">0001</span>abertura do Bloco 0</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/1 - Bloco 0/0001/0002'); return false;"><span class="codigo">0002</span>Classificação do estabelecimento industrial</a></div>
+<div class="registro nivel-2"><span class="sem-link"><span class="codigo">0005</span>Dados complementares da entidade</span></div>
+<div class="registro nivel-2"><span class="sem-link"><span class="codigo">0015</span>Dados do contribuinte substituto ou responsável pelo ICMS destino</span></div>
+<div class="registro nivel-2"><span class="sem-link"><span class="codigo">0100</span>Dados do contabilista</span></div>
+<div class="registro nivel-2"><span class="sem-link"><span class="codigo">0150</span>Tabela de cadastro do participante</span></div>
+<div class="registro nivel-3"><span class="sem-link"><span class="codigo">0175</span>Alteração da Tabela de Cadastro de Participante</span></div>
+<div class="registro nivel-2"><span class="sem-link"><span class="codigo">0190</span>Identificação das Unidades de Medida</span></div>
+<div class="registro nivel-2"><span class="sem-link"><span class="codigo">0200</span>Tabela de identificação do item (produto e serviços)</span></div>
+<div class="registro nivel-3"><span class="sem-link"><span class="codigo">0205</span>Alteração do item</span></div>
+<div class="registro nivel-3"><span class="sem-link"><span class="codigo">0206</span>Código de produto conforme Tabela publicada pela ANP</span></div>
+<div class="registro nivel-3"><span class="sem-link"><span class="codigo">0220</span>Fatores de conversão de unidades</span></div>
+<div class="registro nivel-3"><span class="sem-link"><span class="codigo">0221</span>Correlação entre códigos de itens comercializados</span></div>
+<div class="registro nivel-2"><span class="sem-link"><span class="codigo">0300</span>Cadastro de bens ou componentes do Ativo Imobilizado</span></div>
+<div class="registro nivel-3"><span class="sem-link"><span class="codigo">0305</span>Informação sobre a utilização do bem</span></div>
+<div class="registro nivel-2"><span class="sem-link"><span class="codigo">0400</span>Tabela de Natureza da Operação/Prestação</span></div>
+<div class="registro nivel-2"><span class="sem-link"><span class="codigo">0450</span>Tabela de Informação Complementar do Documento Fiscal</span></div>
+<div class="registro nivel-2"><span class="sem-link"><span class="codigo">0460</span>Tabela de Observações do Lançamento Fiscal</span></div>
+<div class="registro nivel-2"><span class="sem-link"><span class="codigo">0500</span>Plano de Contas Contábeis</span></div>
+<div class="registro nivel-2"><span class="sem-link"><span class="codigo">0600</span>Centro de Custos</span></div>
+<div class="bloco"><div class="bloco-header" onclick="toggleBloco(this)"><span>2 - Bloco B</span><span class="toggle">▼</span></div><div class="bloco-content">
+<div class="registro nivel-0"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/2 - Bloco B/B001'); return false;"><span class="codigo">B001</span>Abertura Bloco B - Somente vigente no DF para apuração de ISS</a></div>
+<div class="registro nivel-1"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/2 - Bloco B/B001/B020'); return false;"><span class="codigo">B020</span>Nota Fiscal (código 01), Nota Fiscal de Serviços (código 03), Nota Fiscal de Serviços Avulsa (código 3B), Nota Fiscal de Produtor (código 04), Conhecimento de Transporte Rodoviário de Cargas (código 08), NF-e (código 55) e NFC-e (código 65)</a></div>
+<div class="registro nivel-1"><span class="sem-link"><span class="codigo">B025</span>Detalhamento por combinação de alíquota e item da lista de serviços da Lei Complementar nº 116/2003</span></div>
+<div class="registro nivel-1"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/2 - Bloco B/B001/B030'); return false;"><span class="codigo">B030</span>Nota fiscal de Serviços Simplificada (código 3A)</a></div>
+<div class="registro nivel-1"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/2 - Bloco B/B001/B035'); return false;"><span class="codigo">B035</span>Detalhamento por combinação de alíquota e item da lista de serviços da Lei Complementar nº 116/2003</a></div>
+<div class="registro nivel-1"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/2 - Bloco B/B001/B350'); return false;"><span class="codigo">B350</span>Serviços prestados por insituições financeiras</a></div>
+<div class="registro nivel-1"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/2 - Bloco B/B001/B420'); return false;"><span class="codigo">B420</span>Totalização dos valores de serviços prestados por combinação de alíquota e item da lista de serviços da Lei Complementar nº 116/2003</a></div>
+<div class="registro nivel-1"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/2 - Bloco B/B001/B440'); return false;"><span class="codigo">B440</span>Totalização dos valores retidos</a></div>
+<div class="registro nivel-1"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/2 - Bloco B/B001/B460'); return false;"><span class="codigo">B460</span>Deduções do ISS</a></div>
+<div class="registro nivel-1"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/2 - Bloco B/B001/B470'); return false;"><span class="codigo">B470</span>Deduções do ISS</a></div>
+<div class="registro nivel-1"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/2 - Bloco B/B001/B500'); return false;"><span class="codigo">B500</span>Apuração do ISS sociedade uniprofissional</a></div>
+<div class="registro nivel-1"><span class="sem-link"><span class="codigo">B510</span>Uniprofissional – empregados e sócios</span></div>
+<div class="registro nivel-0"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/2 - Bloco B/B990'); return false;"><span class="codigo">B990</span>Fechamento Bloco B - Somente vigente no DF para apuração de ISS</a></div>
+<div class="bloco"><div class="bloco-header" onclick="toggleBloco(this)"><span>3 - Bloco C</span><span class="toggle">▼</span></div><div class="bloco-content">
+<div class="registro nivel-0"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001'); return false;"><span class="codigo">C001</span>Abertura do Bloco C</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C100'); return false;"><span class="codigo">C100</span>Documento - Nota Fiscal (código 01), Nota Fiscal Avulsa (código 1B), Nota Fiscal de Produtor (código 04), Nota Fiscal Eletrônica (código 55) e Nota Fiscal Eletrônica para Consumidor Final (código 65)</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C100/C101'); return false;"><span class="codigo">C101</span>Informação complementar dos documentos fiscais quando das operações interestaduais destinadas a consumidor final não contribuinte EC 87/15 (Código 55)</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C100/C105'); return false;"><span class="codigo">C105</span>Operações com ICMS ST recolhido para UF diversa do destinatário do documento fiscal (Código 55)</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C100/C110'); return false;"><span class="codigo">C110</span>Complemento de Documento - Informação Complementar da Nota Fiscal (código 01, 1B, 55)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C100/C110/C111'); return false;"><span class="codigo">C111</span>Complemento de Documento - Processo referenciado</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C100/C110/C112'); return false;"><span class="codigo">C112</span>Complemento de Documento - Documento de Arrecadação Referenciado</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C100/C110/C113'); return false;"><span class="codigo">C113</span>Complemento de Documento - Documento Fiscal Referenciado</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C100/C110/C114'); return false;"><span class="codigo">C114</span>Complemento de Documento - Cupom Fiscal Referenciado</a></div>
+<div class="registro nivel-1"><span class="sem-link"><span class="codigo">C115</span>Local de coleta e/ou entrega (CÓDIGOS 01, 1B e 04)</span></div>
+<div class="registro nivel-3"><span class="sem-link"><span class="codigo">C116</span>Cupom Fiscal Eletrônico - CF-e referenciado</span></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C120'); return false;"><span class="codigo">C120</span>Complemento de Documento - Operações de Importação (código 01 e 55)</a></div>
+<div class="registro nivel-1"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C130'); return false;"><span class="codigo">C130</span>Complemento de Documento - ISSQN, IRRF e Previdência Social</a></div>
+<div class="registro nivel-1"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C140'); return false;"><span class="codigo">C140</span>Complemento de Documento - Fatura (código 01)</a></div>
+<div class="registro nivel-1"><span class="sem-link"><span class="codigo">C141</span>Complemento de Documento - Vencimento da Fatura (código 01)</span></div>
+<div class="registro nivel-1"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C160'); return false;"><span class="codigo">C160</span>Complemento de Documento - Volumes Transportados (código 01 e 04) Exceto Combustíveis</a></div>
+<div class="registro nivel-1"><span class="sem-link"><span class="codigo">C165</span>Complemento de Documento - Operações com combustíveis (código 01)</span></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C170'); return false;"><span class="codigo">C170</span>Complemento de Documento - Itens do Documento (código 01, 1B, 04 55)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C170/C171'); return false;"><span class="codigo">C171</span>Complemento de Item - Armazenamento de Combustíveis (código 01,55)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C170/C172'); return false;"><span class="codigo">C172</span>Complemento de Item - Operações com ISSQN (código 01)</a></div>
+<div class="registro nivel-1"><span class="sem-link"><span class="codigo">C173</span>Complemento de Item - Operações com Medicamentos (código 01,55)</span></div>
+<div class="registro nivel-1"><span class="sem-link"><span class="codigo">C174</span>Complemento de Item - Operações com Armas de Fogo (código 01)</span></div>
+<div class="registro nivel-3"><span class="sem-link"><span class="codigo">C175</span>Complemento de Item - Operações com Veículos Novos (código 01,55)</span></div>
+<div class="registro nivel-3"><span class="sem-link"><span class="codigo">C176</span>Complemento de Item - Ressarcimento de ICMS em operações com Substituição Tributária (código 01,55)</span></div>
+<div class="registro nivel-3"><span class="sem-link"><span class="codigo">C177</span>Complemento de Item - Operações com Produtos Sujeitos a Selo de Controle IPI (código 01)</span></div>
+<div class="registro nivel-1"><span class="sem-link"><span class="codigo">C178</span>Complemento de Item - Operações com Produtos Sujeitos a Tributação de IPI por Unidade ou Quantidade de produto</span></div>
+<div class="registro nivel-1"><span class="sem-link"><span class="codigo">C179</span>Complemento de Item - Informações Complementares ST (código 01)</span></div>
+<div class="registro nivel-3"><span class="sem-link"><span class="codigo">C180</span>Informações complementares das operações de entrada de mercadorias sujeitas à substituição tributária (Código 01, 1B, 04 e 55)</span></div>
+<div class="registro nivel-3"><span class="sem-link"><span class="codigo">C181</span>Informações complementares das operações de devolução de saídas de mercadorias sujeitas à substituição tributária (Código 01, 1B, 04 e 55)</span></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C185'); return false;"><span class="codigo">C185</span>Informações complementares das operações de saída de mercadorias sujeitas à substituição tributária (Código 01, 1B, 04, 55 e 65)</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C186'); return false;"><span class="codigo">C186</span>Informações complementares das operações de devolução de entradas de mercadorias sujeitas à substituição tributária (Código 01, 1B, 04 e 55)</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C190'); return false;"><span class="codigo">C190</span>Registro Analítico do Documento (código 01, 1B, 04, 55 e 65)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C190/C191'); return false;"><span class="codigo">C191</span>Informações do Fundo de Combate à Pobreza - FCP - na NF-e (código 55) e na NFC-e (código 65)</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C195'); return false;"><span class="codigo">C195</span>Complemento do Registro Analítico - Observações do Lançamento Fiscal (código 01, 1B, 04 e 55)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C195/C197'); return false;"><span class="codigo">C197</span>Outras Obrigações Tributárias, Ajustes e Informações provenientes de Documento Fiscal</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C300'); return false;"><span class="codigo">C300</span>Documento - Resumo Diário das Notas Fiscais de Venda a Consumidor (código 02)</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C310'); return false;"><span class="codigo">C310</span>Documentos Cancelados de Nota Fiscal de Venda a Consumidor (código 02)</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C320'); return false;"><span class="codigo">C320</span>Registro Analítico das Notas Fiscais de Venda a Consumidor (código 02)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C320/C321'); return false;"><span class="codigo">C321</span>Itens dos Resumos Diários dos Documentos (código 02)</a></div>
+<div class="registro nivel-3"><span class="sem-link"><span class="codigo">C330</span>Informações complementares das operações de saída de mercadorias sujeitas à substituição tributária (Código 02)</span></div>
+<div class="registro nivel-1"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C350'); return false;"><span class="codigo">C350</span>Nota Fiscal de venda a consumidor (código 02)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C350/C370'); return false;"><span class="codigo">C370</span>Itens do documento (código 02)</a></div>
+<div class="registro nivel-4"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C350/C370/C380'); return false;"><span class="codigo">C380</span>Informações complementares das operações de saída de mercadorias sujeitas à substituição tributária (Código 02)</a></div>
+<div class="registro nivel-3"><span class="sem-link"><span class="codigo">C390</span>Registro Analítico das Notas Fiscais de Venda a Consumidor (código 02)</span></div>
+<div class="registro nivel-2"><span class="sem-link"><span class="codigo">C400</span>Equipamento ECF (código 02, 2D e 60)</span></div>
+<div class="registro nivel-3"><span class="sem-link"><span class="codigo">C405</span>Redução Z (código 02, 2D e 60)</span></div>
+<div class="registro nivel-4"><span class="sem-link"><span class="codigo">C410</span>PIS e COFINS Totalizados no Dia (código 02 e 2D)</span></div>
+<div class="registro nivel-4"><span class="sem-link"><span class="codigo">C420</span>Registro dos Totalizadores Parciais da Redução Z (código 02, 2D e 60)</span></div>
+<div class="registro nivel-1"><span class="sem-link"><span class="codigo">C425</span>Resumo de itens do movimento diário (código 02 e 2D)</span></div>
+<div class="registro nivel-1"><span class="sem-link"><span class="codigo">C430</span>Informações complementares das operações de saída de mercadorias sujeitas à substituição tributária (Código 02, 2D e 60)</span></div>
+<div class="registro nivel-4"><span class="sem-link"><span class="codigo">C460</span>Documento Fiscal Emitido por ECF (código 02, 2D e 60)</span></div>
+<div class="registro nivel-1"><span class="sem-link"><span class="codigo">C465</span>Complemento do Cupom Fiscal Eletrônico Emitido por ECF - CF-e-ECF (código 60)</span></div>
+<div class="registro nivel-4"><span class="sem-link"><span class="codigo">C470</span>Itens do Documento Fiscal Emitido por ECF (código 02 e 2D)</span></div>
+<div class="registro nivel-4"><span class="sem-link"><span class="codigo">C480</span>Informações complementares das operações de saída de mercadorias sujeitas à substituição tributária (Código 02, 2D e 60)</span></div>
+<div class="registro nivel-4"><span class="sem-link"><span class="codigo">C490</span>Registro Analítico do movimento diário (código 02, 2D e 60)</span></div>
+<div class="registro nivel-1"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C495'); return false;"><span class="codigo">C495</span>Resumo Mensal de Itens do ECF por Estabelecimento (código 02 e 2D e 2E)</a></div>
+<div class="registro nivel-2"><span class="sem-link"><span class="codigo">C500</span>Nota Fiscal/Conta de Energia Elétrica (código 06), Nota Fiscal/Conta de fornecimento dágua canalizada (código 29) e Nota Fiscal/Consumo Fornecimento de Gás (Código 28)</span></div>
+<div class="registro nivel-1"><span class="sem-link"><span class="codigo">C510</span>Itens do Documento - Nota Fiscal/Conta de Energia Elétrica (código 06), Nota Fiscal/Conta de fornecimento dágua canalizada (código 29) e Nota Fiscal/Conta Fornecimento de Gás (Código 28)</span></div>
+<div class="registro nivel-3"><span class="sem-link"><span class="codigo">C590</span>Registro Analítico do Documento - Nota Fiscal/Conta de Energia Elétrica (código 06), Nota Fiscal/Conta de fornecimento dágua canalizada (código 29) e Nota Fiscal/Conta Fornecimento de Gás (Código 28)</span></div>
+<div class="registro nivel-4"><span class="sem-link"><span class="codigo">C591</span>Informações do Fundo de Combate à Pobreza – FCP na NF3e (Código 66)</span></div>
+<div class="registro nivel-3"><span class="sem-link"><span class="codigo">C595</span>Observações do lançamento fiscal (Códigos 06, 28, 29 e 66)</span></div>
+<div class="registro nivel-4"><span class="sem-link"><span class="codigo">C597</span>Outras obrigações tributárias, ajustes e informações de valores provenientes de documento fiscal</span></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C600'); return false;"><span class="codigo">C600</span>Consolidação Diária de Notas Fiscais/Contas de Energia Elétrica (Código 06), Nota Fiscal/Conta de Fornecimento d´água (código 29) e Nota Fiscal/Conta de Fornecimento de Gás (Código 28) - (Empresas não obrigadas ao Convênio ICMS 115/03)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C600/C601'); return false;"><span class="codigo">C601</span>Documentos cancelados - Consolidação diária de notas fiscais/conta de energia elétrica (Código 06), nota fiscal/conta de fornecimento de água (código 29) e nota fiscal/conta de fornecimento de gás (código 28)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C600/C610'); return false;"><span class="codigo">C610</span>Itens do Documento Consolidado - Notas Fiscais/Contas de Energia Elétrica (Código 06), Nota Fiscal/Conta de Fornecimento d´água (código 29) e Nota Fiscal/Conta de Fornecimento de Gás (Código 28) - (Empresas não obrigadas ao Convênio ICMS 115/03)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C600/C690'); return false;"><span class="codigo">C690</span>Registro Analítico dos Documentos - Notas Fiscais/Contas de Energia Elétrica (Código 06), Nota Fiscal/Conta de Fornecimento d´água (código 29) e Nota Fiscal/Conta de Fornecimento de Gás (Código 28)</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C700'); return false;"><span class="codigo">C700</span>Consolidação dos Documentos Nota Fiscal/Conta Energia Elétrica (código 06) emitidas em via única - (Empresas obrigadas à entrega do arquivo previsto no Convênio ICMS 115/03) e Nota Fiscal/Conta de Fornecimento de Gás Canalizado (Código 28)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C700/C790'); return false;"><span class="codigo">C790</span>Registro Analítico dos Documentos - Nota Fiscal/Conta Energia Elétrica (código 06) emitidas em via única</a></div>
+<div class="registro nivel-4"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C700/C790/C791'); return false;"><span class="codigo">C791</span>Registro de Informações de ICMS ST por UF</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C800'); return false;"><span class="codigo">C800</span>Registro Cupom Fiscal Eletrônico - CF-e (Código 59)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C800/C810'); return false;"><span class="codigo">C810</span>Itens do documento do Cupom Fiscal Eletrônico – SAT (CFE-SAT) (Código 59)</a></div>
+<div class="registro nivel-4"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C800/C810/C815'); return false;"><span class="codigo">C815</span>Informações complementares das operações de saída de mercadorias sujeitas à substituição tributária (CF-E-SAT) (Código 59)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C800/C850'); return false;"><span class="codigo">C850</span>Registro analítico do CF-e-SAT (Código 59)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C800/C855'); return false;"><span class="codigo">C855</span>Observações do lançamento fiscal (Código 59)</a></div>
+<div class="registro nivel-4"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C800/C855/C857'); return false;"><span class="codigo">C857</span>Outras obrigações tributárias, ajustes e informações de valores provenientes de documento fiscal</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C860'); return false;"><span class="codigo">C860</span>Identificação do Equipamento SAT-CF-e</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C860/C870'); return false;"><span class="codigo">C870</span>Itens do resumo diário dos documentos (CF-E-SAT) (Código 59)</a></div>
+<div class="registro nivel-4"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C860/C870/C880'); return false;"><span class="codigo">C880</span>Informações complementares das operações de saída de mercadorias sujeitas à substituição tributária (CF-E-SAT) (Código 59)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C001/C860/C890'); return false;"><span class="codigo">C890</span>Resumo Diário do CF-e-SAT (Código 59) por Equipamento SAT-CF-e</a></div>
+<div class="registro nivel-1"><span class="sem-link"><span class="codigo">C895</span>Registro C895 da EFD-ICMS/IPI - Observações do lançamento fiscal(Código 59)</span></div>
+<div class="registro nivel-4"><span class="sem-link"><span class="codigo">C897</span>Outras obrigações tributárias, ajustes e informações de valores provenientes de documento fiscal</span></div>
+<div class="registro nivel-0"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/3 - Bloco C/C990'); return false;"><span class="codigo">C990</span>Encerramento do Bloco C</a></div>
+<div class="bloco"><div class="bloco-header" onclick="toggleBloco(this)"><span>4 - Bloco D</span><span class="toggle">▼</span></div><div class="bloco-content">
+<div class="registro nivel-0"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001'); return false;"><span class="codigo">D001</span>Abertura do Bloco D</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D100'); return false;"><span class="codigo">D100</span>Nota Fiscal de Serviço de Transporte (código 07) e Conhecimentos de Transporte Rodoviário de Cargas (código 08), Conhecimento de Transporte de Cargas Avulso (Código 8B), Aquaviário de Cargas (código 09), Aéreo (código 10), Ferroviário de Cargas (código 11) e Multimodal de Cargas (código 26) e Nota Fiscal de Transporte Ferroviário de Cargas (código 27) e Conhecimento de Transporte Eletrônico - CT-e (código 57)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D100/D101'); return false;"><span class="codigo">D101</span>Informação complementar dos documentos fiscais quando das prestações interestaduais destinadas a consumidor final não contribuinte EC 87/15 (código 57)</a></div>
+<div class="registro nivel-1"><span class="sem-link"><span class="codigo">D110</span>Itens do documento - Nota Fiscal de Serviços de Transporte (código 07)</span></div>
+<div class="registro nivel-1"><span class="sem-link"><span class="codigo">D120</span>Complemento da Nota Fiscal de Serviços de Transporte (código 07)</span></div>
+<div class="registro nivel-3"><span class="sem-link"><span class="codigo">D130</span>Complemento do Conhecimento Rodoviário de Cargas (código 08) e Conhecimento de Transporte de Cargas Avulso (Código 8B)</span></div>
+<div class="registro nivel-3"><span class="sem-link"><span class="codigo">D140</span>Complemento do Conhecimento Aquaviário de Cargas (código 09)</span></div>
+<div class="registro nivel-1"><span class="sem-link"><span class="codigo">D150</span>Complemento do Conhecimento Aéreo de Cargas (código 10)</span></div>
+<div class="registro nivel-1"><span class="sem-link"><span class="codigo">D160</span>Carga Transportada (Código 08, 8B, 09, 10, 11, 26 E 27)</span></div>
+<div class="registro nivel-1"><span class="sem-link"><span class="codigo">D161</span>Local de Coleta e Entrega (códigos 08, 8B, 09, 10, 11 e 26)</span></div>
+<div class="registro nivel-1"><span class="sem-link"><span class="codigo">D162</span>Identificação dos documentos fiscais (código 08, 8B, 09, 10, 11, 26 e 27)</span></div>
+<div class="registro nivel-1"><span class="sem-link"><span class="codigo">D170</span>Complemento do Conhecimento Multimodal de Cargas (código 26)</span></div>
+<div class="registro nivel-1"><span class="sem-link"><span class="codigo">D180</span>Modais (código 26)</span></div>
+<div class="registro nivel-1"><span class="sem-link"><span class="codigo">D190</span>Registro Analítico dos Documentos (Código 07, 08, 8B, 09, 10, 11, 26, 27 e 57)</span></div>
+<div class="registro nivel-3"><span class="sem-link"><span class="codigo">D195</span>Observações do lançamento (Código 07, 08, 8B, 09, 10, 11, 26, 27 e 57)</span></div>
+<div class="registro nivel-4"><span class="sem-link"><span class="codigo">D197</span>Outras obrigações tributárias, ajustes e informações de valores provenientes do documento fiscal</span></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D300'); return false;"><span class="codigo">D300</span>Registro Analítico dos bilhetes consolidados de Passagem Rodoviário (código 13), de Passagem Aquaviário (código 14), de Passagem e Nota de Bagagem (código 15) e de Passagem Ferroviário (código 16)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D300/D301'); return false;"><span class="codigo">D301</span>Documentos cancelados dos Bilhetes de Passagem Rodoviário (código 13), de Passagem Aquaviário (código 14), de Passagem e Nota de Bagagem (código 15) e de Passagem Ferroviário (código 16)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D300/D310'); return false;"><span class="codigo">D310</span>Complemento dos Bilhetes (código 13, código 14, código 15 e código 16)</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D350'); return false;"><span class="codigo">D350</span>Equipamento ECF (Códigos 2E, 13, 14, 15 e 16)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D350/D355'); return false;"><span class="codigo">D355</span>Redução Z (Códigos 2E, 13, 14, 15 e 16)</a></div>
+<div class="registro nivel-4"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D350/D355/D360'); return false;"><span class="codigo">D360</span>PIS E COFINS totalizados no dia (Códigos 2E, 13, 14, 15 e 16)</a></div>
+<div class="registro nivel-4"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D350/D355/D365'); return false;"><span class="codigo">D365</span>Registro dos Totalizadores Parciais da Redução Z (Códigos 2E, 13, 14, 15 e 16)</a></div>
+<div class="registro nivel-5"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D350/D355/D365/D370'); return false;"><span class="codigo">D370</span>Complemento dos documentos informados (Códigos 13, 14, 15, 16 E 2E)</a></div>
+<div class="registro nivel-4"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D350/D355/D390'); return false;"><span class="codigo">D390</span>Registro analítico do movimento diário (Códigos 13, 14, 15, 16 E 2E)</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D400'); return false;"><span class="codigo">D400</span>Resumo do Movimento Diário (código 18)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D400/D410'); return false;"><span class="codigo">D410</span>Documentos Informados (Códigos 13, 14, 15 e 16)</a></div>
+<div class="registro nivel-4"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D400/D410/D411'); return false;"><span class="codigo">D411</span>Documentos Cancelados dos Documentos Informados (Códigos 13, 14, 15 e 16)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D400/D420'); return false;"><span class="codigo">D420</span>Complemento dos Documentos Informados (Códigos 13, 14, 15 e 16)</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D500'); return false;"><span class="codigo">D500</span>Nota Fiscal de Serviço de Comunicação (código 21) e Serviço de Telecomunicação (código 22)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D500/D510'); return false;"><span class="codigo">D510</span>Itens do Documento - Nota Fiscal de Serviço de Comunicação (código 21) e Serviço de Telecomunicação (código 22)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D500/D530'); return false;"><span class="codigo">D530</span>Terminal Faturado</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D500/D590'); return false;"><span class="codigo">D590</span>Registro Analítico do Documento (códigos 21 e 22)</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D600'); return false;"><span class="codigo">D600</span>Consolidação da Prestação de Serviços - Notas de Serviço de Comunicação (código 21) e de Serviço de Telecomunicação (código 22)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D600/D610'); return false;"><span class="codigo">D610</span>Itens do Documento Consolidado (códigos 21 e 22)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D600/D690'); return false;"><span class="codigo">D690</span>Registro Analítico dos Documentos (códigos 21 e 22)</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D695'); return false;"><span class="codigo">D695</span>Consolidação da Prestação de Serviços - Notas de Serviço de Comunicação (código 21) e de Serviço de Telecomunicação (código 22)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D695/D696'); return false;"><span class="codigo">D696</span>Registro Analítico dos Documentos (códigos 21 e 22)</a></div>
+<div class="registro nivel-4"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D695/D696/D697'); return false;"><span class="codigo">D697</span>Registro de informações de outras UFs, relativamente aos serviços “não-medidos” de televisão por assinatura via satélite</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D700'); return false;"><span class="codigo">D700</span>Nota Fiscal Fatura Eletrônica de serviços de comunicação - NFCom (Código 62)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D700/D730'); return false;"><span class="codigo">D730</span>Registro analítico Nota Fiscal Fatura Eletrônica de serviços de comunicação – NFCom (Código 62)</a></div>
+<div class="registro nivel-4"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D700/D730/D731'); return false;"><span class="codigo">D731</span>Informações do Fundo de Combate à Pobreza - FCP - (Código 62)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D700/D735'); return false;"><span class="codigo">D735</span>Observações do lançamento fiscal (Código 62)</a></div>
+<div class="registro nivel-4"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D700/D735/D737'); return false;"><span class="codigo">D737</span>Outras obrigações tributárias, ajustes e informações de valores provenientes de documento fiscal</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D750'); return false;"><span class="codigo">D750</span>Escrituração consolidada da Nota Fiscal Fatura Eletrônica de serviços de comunicação - NFCom (Código 62)</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D750/D760'); return false;"><span class="codigo">D760</span>Registro analítico da escrituração consolidada da Nota Fiscal Fatura Eletrônica de serviços de comunicação - NFCom (Código 62)</a></div>
+<div class="registro nivel-4"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D001/D750/D760/D761'); return false;"><span class="codigo">D761</span>Informações do Fundo de Combate à Pobreza – FCP – (Código 62)</a></div>
+<div class="registro nivel-0"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/4 - Bloco D/D990'); return false;"><span class="codigo">D990</span>Fechamento do Bloco D</a></div>
+<div class="bloco"><div class="bloco-header" onclick="toggleBloco(this)"><span>5 - Bloco E</span><span class="toggle">▼</span></div><div class="bloco-content">
+<div class="registro nivel-0"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/5 - Bloco E/E001'); return false;"><span class="codigo">E001</span>Abertura do Bloco E</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/5 - Bloco E/E001/E100'); return false;"><span class="codigo">E100</span>Período de Apuração do ICMS</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/5 - Bloco E/E001/E100/E110'); return false;"><span class="codigo">E110</span>Apuração do ICMS - Operações Próprias</a></div>
+<div class="registro nivel-4"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/5 - Bloco E/E001/E100/E110/E111'); return false;"><span class="codigo">E111</span>Ajuste/Benefício/Incentivo da Apuração do ICMS</a></div>
+<div class="registro nivel-5"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/5 - Bloco E/E001/E100/E110/E111/E112'); return false;"><span class="codigo">E112</span>Informações Adicionais dos Ajustes da Apuração do ICMS</a></div>
+<div class="registro nivel-5"><span class="sem-link"><span class="codigo">E113</span>Informações Adicionais dos Ajustes da Apuração do ICMS - Identificação dos documentos fiscais</span></div>
+<div class="registro nivel-4"><span class="sem-link"><span class="codigo">E115</span>Informações Adicionais da Apuração do ICMS - Valores Declaratórios</span></div>
+<div class="registro nivel-4"><span class="sem-link"><span class="codigo">E116</span>Obrigações do ICMS Recolhido ou a Recolher - Obrigações Próprias</span></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/5 - Bloco E/E001/E100/E200'); return false;"><span class="codigo">E200</span>Período de Apuração do ICMS - Substituição Tributária</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/5 - Bloco E/E001/E100/E200/E210'); return false;"><span class="codigo">E210</span>Apuração do ICMS - Substituição Tributária</a></div>
+<div class="registro nivel-4"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/5 - Bloco E/E001/E100/E200/E210/E220'); return false;"><span class="codigo">E220</span>Ajuste/Benefício/Incentivo da Apuração do ICMS - Substituição Tributária</a></div>
+<div class="registro nivel-5"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/5 - Bloco E/E001/E100/E200/E210/E220/E230'); return false;"><span class="codigo">E230</span>Informações Adicionais dos Ajustes da Apuração do ICMS Substituição Tributária</a></div>
+<div class="registro nivel-5"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/5 - Bloco E/E001/E100/E200/E210/E220/E240'); return false;"><span class="codigo">E240</span>Informações Adicionais dos Ajustes da Apuração do ICMS Substituição Tributária - Identificação dos documentos fiscais</a></div>
+<div class="registro nivel-4"><span class="sem-link"><span class="codigo">E250</span>Obrigações do ICMS Recolhido ou a Recolher - Substituição Tributária</span></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/5 - Bloco E/E001/E100/E300'); return false;"><span class="codigo">E300</span>Período de Apuração do ICMS Diferencial de Alíquota - UF Origem/Destino EC 87/15</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/5 - Bloco E/E001/E100/E300/E310'); return false;"><span class="codigo">E310</span>Apuração do ICMS Diferencial de Alíquota - UF Origem/Destino EC 87/15</a></div>
+<div class="registro nivel-4"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/5 - Bloco E/E001/E100/E300/E310/E311'); return false;"><span class="codigo">E311</span>Ajuste/Benefício/Incentivo da Apuração do ICMS Diferencial de Alíquota - UF Origem/Destino EC 87/15</a></div>
+<div class="registro nivel-5"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/5 - Bloco E/E001/E100/E300/E310/E311/E312'); return false;"><span class="codigo">E312</span>Informações Adicionais dos Ajustes da Apuração do ICMS Diferencial de Alíquota - UF Origem/Destino EC 87/15</a></div>
+<div class="registro nivel-5"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/5 - Bloco E/E001/E100/E300/E310/E311/E313'); return false;"><span class="codigo">E313</span>Informações Adicionais da Apuração do ICMS Diferencial de Alíquota - UF Origem/Destino EC 87/15 Identificação dos Documentos Fiscais</a></div>
+<div class="registro nivel-4"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/5 - Bloco E/E001/E100/E300/E310/E316'); return false;"><span class="codigo">E316</span>Obrigações do ICMS recolhido ou a recolher - Diferencial de Alíquota - UF Origem/Destino EC 87/15</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/5 - Bloco E/E001/E100/E500'); return false;"><span class="codigo">E500</span>Período de Apuração do IPI</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/5 - Bloco E/E001/E100/E500/E510'); return false;"><span class="codigo">E510</span>Consolidação dos Valores de IPI</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/5 - Bloco E/E001/E100/E500/E520'); return false;"><span class="codigo">E520</span>Apuração do IPI</a></div>
+<div class="registro nivel-4"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/5 - Bloco E/E001/E100/E500/E520/E530'); return false;"><span class="codigo">E530</span>Ajustes da Apuração do IPI</a></div>
+<div class="registro nivel-5"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/5 - Bloco E/E001/E100/E500/E520/E530/E531'); return false;"><span class="codigo">E531</span>Informações adicionais dos ajustes da apuração do IPI - Identificação dos documentos fiscais (01 e 55)</a></div>
+<div class="registro nivel-0"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/5 - Bloco E/E990'); return false;"><span class="codigo">E990</span>Fechamento do Bloco E</a></div>
+<div class="bloco"><div class="bloco-header" onclick="toggleBloco(this)"><span>6 - Bloco G</span><span class="toggle">▼</span></div><div class="bloco-content">
+<div class="registro nivel-0"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/6 - Bloco G/G001'); return false;"><span class="codigo">G001</span>Abertura do Bloco G</a></div>
+<div class="registro nivel-0"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/6 - Bloco G/G990'); return false;"><span class="codigo">G990</span>Fechamento do Bloco G</a></div>
+<div class="bloco"><div class="bloco-header" onclick="toggleBloco(this)"><span>7 - Bloco H</span><span class="toggle">▼</span></div><div class="bloco-content">
+<div class="registro nivel-0"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/7 - Bloco H/H001'); return false;"><span class="codigo">H001</span>Abertura do Bloco H</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/7 - Bloco H/H001/H005'); return false;"><span class="codigo">H005</span>Totais do Inventário</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/7 - Bloco H/H001/H005/H010'); return false;"><span class="codigo">H010</span>Inventário</a></div>
+<div class="registro nivel-4"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/7 - Bloco H/H001/H005/H010/H020'); return false;"><span class="codigo">H020</span>Informação complementar do Inventário</a></div>
+<div class="registro nivel-4"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/7 - Bloco H/H001/H005/H010/H020/H030 - Informações complementar'); return false;"><span class="codigo">H030</span>Informações complementares do inventário das mercadorias sujeitas ao regime de substituição tributária</a></div>
+<div class="registro nivel-0"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/7 - Bloco H/H990'); return false;"><span class="codigo">H990</span>Fechamento do Bloco H</a></div>
+<div class="bloco"><div class="bloco-header" onclick="toggleBloco(this)"><span>8 - Bloco K</span><span class="toggle">▼</span></div><div class="bloco-content">
+<div class="registro nivel-0"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/8 - Bloco K/K001'); return false;"><span class="codigo">K001</span>Abertura do Bloco K</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/8 - Bloco K/K001/K010'); return false;"><span class="codigo">K010</span>Informação sobre o tipo de leiaute (simplificado / completo)</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI'); return false;"><span class="codigo">K100</span>Período de Apuração do ICMS/IPI</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K200 - Estoque Escri'); return false;"><span class="codigo">K200</span>Estoque Escriturado</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K210 - Desmontagem d'); return false;"><span class="codigo">K210</span>Desmontagem de mercadorias - Item de origem</a></div>
+<div class="registro nivel-4"><span class="sem-link"><span class="codigo">K215</span>Desmontagem de mercadorias - Item de destino</span></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K220 - Outras Movime'); return false;"><span class="codigo">K220</span>Outras Movimentações Internas entre Mercadorias</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K230 - Itens Produzi'); return false;"><span class="codigo">K230</span>Itens Produzidos</a></div>
+<div class="registro nivel-4"><span class="sem-link"><span class="codigo">K235</span>Insumos Consumidos</span></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K250 - Industrializa'); return false;"><span class="codigo">K250</span>Industrialização Efetuada por Terceiros - Itens Produzidos</a></div>
+<div class="registro nivel-4"><span class="sem-link"><span class="codigo">K255</span>Industrialização em Terceiros - Insumos Consumidos</span></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K260 - Reprocessamen'); return false;"><span class="codigo">K260</span>Reprocessamento/reparo de produto/insumo</a></div>
+<div class="registro nivel-4"><span class="sem-link"><span class="codigo">K265</span>Reprocessamento/reparo - Mercadorias consumidas e/ou retornadas</span></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K270 - Correção de a'); return false;"><span class="codigo">K270</span>Correção de apontamento dos Registros K210, K220, K230, K250, K260, K291, K292, K301 e K302</a></div>
+<div class="registro nivel-4"><span class="sem-link"><span class="codigo">K275</span>Correção de apontamento e retorno de insumos dos Registros K215, K220, K235, K255 e K265</span></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K280 - Correção de a'); return false;"><span class="codigo">K280</span>Correção de apontamento - Estoque escriturado</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K290 - Produção conj'); return false;"><span class="codigo">K290</span>Produção conjunta - Ordem de Produção</a></div>
+<div class="registro nivel-4"><span class="sem-link"><span class="codigo">K291</span>Produção conjunta - Itens produzidos</span></div>
+<div class="registro nivel-4"><span class="sem-link"><span class="codigo">K292</span>Produção conjunta - Insumos consumidos</span></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K300 - Produção conj'); return false;"><span class="codigo">K300</span>Produção conjunta - Industrialização efetuada por terceiros</a></div>
+<div class="registro nivel-4"><span class="sem-link"><span class="codigo">K301</span>Produção conjunta - Industrialização efetuada por terceiros - Itens produzidos</span></div>
+<div class="registro nivel-4"><span class="sem-link"><span class="codigo">K302</span>Produção conjunta - Industrialização efetuada por terceiros - Insumos consumidos</span></div>
+<div class="registro nivel-0"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/8 - Bloco K/K990'); return false;"><span class="codigo">K990</span>Fechamento do Bloco K</a></div>
+<div class="bloco"><div class="bloco-header" onclick="toggleBloco(this)"><span>9 - Bloco 1</span><span class="toggle">▼</span></div><div class="bloco-content">
+<div class="registro nivel-0"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/9 - Bloco 1/1001'); return false;"><span class="codigo">1001</span>Abertura do Bloco 1</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/9 - Bloco 1/1001/1010'); return false;"><span class="codigo">1010</span>Obrigatoriedade de registros do Bloco 1</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/9 - Bloco 1/1001/1010/1100 - Registro de Informações sobre Exportação'); return false;"><span class="codigo">1100</span>Registro de Informações sobre Exportação</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/9 - Bloco 1/1001/1010/1100 - Registro de Informações sobre Exportação/1105 - Documentos Fiscais d'); return false;"><span class="codigo">1105</span>Documentos Fiscais de Exportação</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/9 - Bloco 1/1001/1010/1100 - Registro de Informações sobre Exportação/1110 - Operações de Exporta'); return false;"><span class="codigo">1110</span>Operações de Exportação Indireta - Mercadorias de terceiros</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/9 - Bloco 1/1001/1010/1200 - Controle de Créditos Fiscais - ICMS'); return false;"><span class="codigo">1200</span>Controle de Créditos Fiscais - ICMS</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/9 - Bloco 1/1001/1010/1200 - Controle de Créditos Fiscais - ICMS/1210 - Utilização de Créditos Fi'); return false;"><span class="codigo">1210</span>Utilização de Créditos Fiscais - ICMS</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/9 - Bloco 1/1001/1010/1250 - Informações consolidadas de saldos de restituição, ressarcimento e c'); return false;"><span class="codigo">1250</span>Informações consolidadas de saldos de restituição, ressarcimento e complementação do ICMS</a></div>
+<div class="registro nivel-3"><span class="sem-link"><span class="codigo">1255</span>Informações consolidadas de saldos de restituição, ressarcimento e complementação do ICMS por motivo</span></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/9 - Bloco 1/1001/1010/1300 - Movimentação diária de combustíveis'); return false;"><span class="codigo">1300</span>Movimentação diária de combustíveis</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/9 - Bloco 1/1001/1010/1300 - Movimentação diária de combustíveis/1310 - Movimentação diária de co'); return false;"><span class="codigo">1310</span>Movimentação diária de combustíveis por tanque</a></div>
+<div class="registro nivel-4"><span class="sem-link"><span class="codigo">1320</span>Volume de vendas</span></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/9 - Bloco 1/1001/1010/1350 - Bombas'); return false;"><span class="codigo">1350</span>Bombas</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/9 - Bloco 1/1001/1010/1350 - Bombas/1360 - Lacres das bombas'); return false;"><span class="codigo">1360</span>Lacres das bombas</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/9 - Bloco 1/1001/1010/1350 - Bombas/1370 - Bicos da bomba'); return false;"><span class="codigo">1370</span>Bicos da bomba</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/9 - Bloco 1/1001/1010/1390 - Controle de produção de Usina'); return false;"><span class="codigo">1390</span>Controle de produção de Usina</a></div>
+<div class="registro nivel-3"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/9 - Bloco 1/1001/1010/1390 - Controle de produção de Usina/1391 - Produção diária da usina'); return false;"><span class="codigo">1391</span>Produção diária da usina</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/9 - Bloco 1/1001/1010/1400 - Informação sobre Valor Agregado'); return false;"><span class="codigo">1400</span>Informação sobre Valor Agregado</a></div>
+<div class="registro nivel-2"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/9 - Bloco 1/1001/1010/1500 - Nota FiscalConta de energia elétrica (código 06) - Operações Interes'); return false;"><span class="codigo">1500</span>Nota Fiscal/Conta de energia elétrica (código 06) - Operações Interestaduais</a></div>
+<div class="registro nivel-3"><span class="sem-link"><span class="codigo">1510</span>Itens do documento Nota Fiscal/Conta de energia elétrica (código 06)</span></div>
+<div class="registro nivel-1"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/9 - Bloco 1/1001/1600'); return false;"><span class="codigo">1600</span>Total das operações com cartão de crédito e/ou débito</a></div>
+<div class="registro nivel-2"><span class="sem-link"><span class="codigo">1601</span>Operações com instrumentos de pagamentos eletrônicos</span></div>
+<div class="registro nivel-2"><span class="sem-link"><span class="codigo">1700</span>Documentos fiscais utilizados</span></div>
+<div class="registro nivel-3"><span class="sem-link"><span class="codigo">1710</span>Documentos fiscais cancelados/inutilizados</span></div>
+<div class="registro nivel-2"><span class="sem-link"><span class="codigo">1800</span>DCTA - Demonstrativo de crédito do ICMS sobre transporte aéreo</span></div>
+<div class="registro nivel-2"><span class="sem-link"><span class="codigo">1900</span>Indicador de sub-apuração do ICMS</span></div>
+<div class="registro nivel-3"><span class="sem-link"><span class="codigo">1910</span>Período da sub-apuração do ICMS</span></div>
+<div class="registro nivel-4"><span class="sem-link"><span class="codigo">1920</span>Sub-apuração do ICMS</span></div>
+<div class="registro nivel-5"><span class="sem-link"><span class="codigo">1921</span>Ajuste/benefício/incentivo da sub-apuração do ICMS</span></div>
+<div class="registro nivel-6"><span class="sem-link"><span class="codigo">1922</span>Informações adicionais dos ajustes da sub-apuração do ICMS</span></div>
+<div class="registro nivel-6"><span class="sem-link"><span class="codigo">1923</span>Informações adicionais dos ajustes da sub-apuração do ICMS - Identificação dos documentos fiscais</span></div>
+<div class="registro nivel-5"><span class="sem-link"><span class="codigo">1925</span>Informações adicionais da sub-apuração do ICMS - Valores declaratórios</span></div>
+<div class="registro nivel-5"><span class="sem-link"><span class="codigo">1926</span>Obrigações do ICMS a recolher - Operações referentes à sub-apuração do ICMS</span></div>
+<div class="registro nivel-2"><span class="sem-link"><span class="codigo">1960</span>Guia de Informação e Apuração de incentivos Fiscais e Financeiros: Indústria (Crédito presumido)</span></div>
+<div class="registro nivel-2"><span class="sem-link"><span class="codigo">1970</span>GIAF 3 - Guia de Informação e Apuração de incentivos Fiscais e Financeiros: Importação (Diferimento na entrada e crédito presumido na saída subsequente)</span></div>
+<div class="registro nivel-3"><span class="sem-link"><span class="codigo">1975</span>Guia de Informação e Apuração de Incentivos Fiscais e Financeiros: Importação (Saídas intermas por faixa de alíquota)</span></div>
+<div class="registro nivel-2"><span class="sem-link"><span class="codigo">1980</span>GIAF 4 - Guia de Informação e Apuração de Incentivos Fiscais e Financeiros: Central de distribuição (entradas/saídas)</span></div>
+<div class="registro nivel-0"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/9 - Bloco 1/1990'); return false;"><span class="codigo">1990</span>Fechamento do Bloco 1</a></div>
+<div class="bloco"><div class="bloco-header" onclick="toggleBloco(this)"><span>10 - Bloco 9</span><span class="toggle">▼</span></div><div class="bloco-content">
+<div class="registro nivel-0"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/10 - Bloco 9/9001'); return false;"><span class="codigo">9001</span>Abertura do Bloco 9</a></div>
+<div class="registro nivel-0"><a href="#" onclick="abrirRelativo('verificacoes/sped_fiscal/10 - Bloco 9/9990'); return false;"><span class="codigo">9990</span>Fechamento do Bloco 9</a></div>
+</div></div>
+
+    </div>
+    <script>
+        function toggleBloco(el) {
+            const bloco = el.parentElement;
+            const toggle = el.querySelector('.toggle');
+            bloco.classList.toggle('collapsed');
+            toggle.textContent = bloco.classList.contains('collapsed') ? '▶' : '▼';
+        }
+        
+        function abrirRelativo(caminhoRel) {
+            let caminhoAbsoluto = '';
+            
+            if (window.location.protocol === 'file:') {
+                // Se abriu via file://, pega o caminho do arquivo HTML
+                const htmlPath = decodeURIComponent(window.location.pathname);
+                let basePath = htmlPath.substring(0, htmlPath.lastIndexOf('/'));
+                // No Windows, remove a barra inicial se existir
+                if (basePath.startsWith('/') && basePath.length > 1 && basePath[2] === ':') {
+                    basePath = basePath.substring(1);
+                }
+                const caminhoLimpo = caminhoRel.replace(/^\.\//, '');
+                caminhoAbsoluto = basePath + '/' + caminhoLimpo;
+            } else {
+                // Se abriu via http, constrói caminho relativo
+                const htmlPath = window.location.pathname;
+                const basePath = htmlPath.substring(0, htmlPath.lastIndexOf('/'));
+                const caminhoLimpo = caminhoRel.replace(/^\.\//, '');
+                caminhoAbsoluto = basePath + '/' + caminhoLimpo;
+            }
+            
+            const caminhoWin = caminhoAbsoluto.replace(/\//g, '\\');
+            
+            try {
+                const uri = 'file:///' + caminhoAbsoluto.replace(/ /g, '%20');
+                window.open(uri);
+            } catch(e) {
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(caminhoWin).then(() => {
+                        alert('✓ Caminho copiado!\n\n' + caminhoWin + '\n\nCole no Explorer (Win+E)');
+                    });
+                } else {
+                    prompt('Copie o caminho:', caminhoWin);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,311 @@
+
+================================================================================
+1 - Bloco 0
+================================================================================
+
+0000 | sped_fiscal/1 - Bloco 0/0000
+0001 | sped_fiscal/1 - Bloco 0/0001
+    0002 | sped_fiscal/1 - Bloco 0/0001/0002
+    0005 | [NÃO ENCONTRADO]
+    0015 | [NÃO ENCONTRADO]
+    0100 | [NÃO ENCONTRADO]
+    0150 | [NÃO ENCONTRADO]
+      0175 | [NÃO ENCONTRADO]
+    0190 | [NÃO ENCONTRADO]
+    0200 | [NÃO ENCONTRADO]
+      0205 | [NÃO ENCONTRADO]
+      0206 | [NÃO ENCONTRADO]
+      0220 | [NÃO ENCONTRADO]
+      0221 | [NÃO ENCONTRADO]
+    0300 | [NÃO ENCONTRADO]
+      0305 | [NÃO ENCONTRADO]
+    0400 | [NÃO ENCONTRADO]
+    0450 | [NÃO ENCONTRADO]
+    0460 | [NÃO ENCONTRADO]
+    0500 | [NÃO ENCONTRADO]
+    0600 | [NÃO ENCONTRADO]
+
+================================================================================
+2 - Bloco B
+================================================================================
+
+B001 | sped_fiscal/2 - Bloco B/B001
+  B020 | sped_fiscal/2 - Bloco B/B001/B020
+  B025 | [NÃO ENCONTRADO]
+  B030 | sped_fiscal/2 - Bloco B/B001/B030
+  B035 | sped_fiscal/2 - Bloco B/B001/B035
+  B350 | sped_fiscal/2 - Bloco B/B001/B350
+  B420 | sped_fiscal/2 - Bloco B/B001/B420
+  B440 | sped_fiscal/2 - Bloco B/B001/B440
+  B460 | sped_fiscal/2 - Bloco B/B001/B460
+  B470 | sped_fiscal/2 - Bloco B/B001/B470
+  B500 | sped_fiscal/2 - Bloco B/B001/B500
+  B510 | [NÃO ENCONTRADO]
+B990 | sped_fiscal/2 - Bloco B/B990
+
+================================================================================
+3 - Bloco C
+================================================================================
+
+C001 | sped_fiscal/3 - Bloco C/C001
+    C100 | sped_fiscal/3 - Bloco C/C001/C100
+    C101 | sped_fiscal/3 - Bloco C/C001/C100/C101
+    C105 | sped_fiscal/3 - Bloco C/C001/C100/C105
+    C110 | sped_fiscal/3 - Bloco C/C001/C100/C110
+      C111 | sped_fiscal/3 - Bloco C/C001/C100/C110/C111
+      C112 | sped_fiscal/3 - Bloco C/C001/C100/C110/C112
+      C113 | sped_fiscal/3 - Bloco C/C001/C100/C110/C113
+      C114 | sped_fiscal/3 - Bloco C/C001/C100/C110/C114
+  C115 | [NÃO ENCONTRADO]
+      C116 | [NÃO ENCONTRADO]
+    C120 | [NÃO ENCONTRADO]
+  C130 | sped_fiscal/3 - Bloco C/C001/C130
+  C140 | sped_fiscal/3 - Bloco C/C001/C140
+  C141 | [NÃO ENCONTRADO]
+  C160 | sped_fiscal/3 - Bloco C/C001/C160
+  C165 | [NÃO ENCONTRADO]
+    C170 | [NÃO ENCONTRADO]
+      C171 | [NÃO ENCONTRADO]
+      C172 | [NÃO ENCONTRADO]
+  C173 | [NÃO ENCONTRADO]
+  C174 | [NÃO ENCONTRADO]
+      C175 | [NÃO ENCONTRADO]
+      C176 | [NÃO ENCONTRADO]
+      C177 | [NÃO ENCONTRADO]
+  C178 | [NÃO ENCONTRADO]
+  C179 | [NÃO ENCONTRADO]
+      C180 | [NÃO ENCONTRADO]
+      C181 | [NÃO ENCONTRADO]
+    C185 | [NÃO ENCONTRADO]
+    C186 | [NÃO ENCONTRADO]
+    C190 | [NÃO ENCONTRADO]
+      C191 | [NÃO ENCONTRADO]
+    C195 | [NÃO ENCONTRADO]
+      C197 | [NÃO ENCONTRADO]
+    C300 | [NÃO ENCONTRADO]
+    C310 | [NÃO ENCONTRADO]
+    C320 | [NÃO ENCONTRADO]
+      C321 | [NÃO ENCONTRADO]
+      C330 | [NÃO ENCONTRADO]
+  C350 | sped_fiscal/3 - Bloco C/C001/C350
+      C370 | sped_fiscal/3 - Bloco C/C001/C350/C370
+        C380 | sped_fiscal/3 - Bloco C/C001/C350/C370/C380
+      C390 | [NÃO ENCONTRADO]
+    C400 | [NÃO ENCONTRADO]
+      C405 | [NÃO ENCONTRADO]
+        C410 | [NÃO ENCONTRADO]
+        C420 | [NÃO ENCONTRADO]
+  C425 | [NÃO ENCONTRADO]
+  C430 | [NÃO ENCONTRADO]
+        C460 | [NÃO ENCONTRADO]
+  C465 | [NÃO ENCONTRADO]
+        C470 | [NÃO ENCONTRADO]
+        C480 | [NÃO ENCONTRADO]
+        C490 | [NÃO ENCONTRADO]
+  C495 | sped_fiscal/3 - Bloco C/C001/C495
+    C500 | [NÃO ENCONTRADO]
+  C510 | [NÃO ENCONTRADO]
+      C590 | [NÃO ENCONTRADO]
+        C591 | [NÃO ENCONTRADO]
+      C595 | [NÃO ENCONTRADO]
+        C597 | [NÃO ENCONTRADO]
+    C600 | [NÃO ENCONTRADO]
+      C601 | [NÃO ENCONTRADO]
+      C610 | [NÃO ENCONTRADO]
+      C690 | [NÃO ENCONTRADO]
+    C700 | [NÃO ENCONTRADO]
+      C790 | [NÃO ENCONTRADO]
+        C791 | [NÃO ENCONTRADO]
+    C800 | [NÃO ENCONTRADO]
+      C810 | [NÃO ENCONTRADO]
+        C815 | [NÃO ENCONTRADO]
+      C850 | [NÃO ENCONTRADO]
+      C855 | [NÃO ENCONTRADO]
+        C857 | [NÃO ENCONTRADO]
+    C860 | [NÃO ENCONTRADO]
+      C870 | [NÃO ENCONTRADO]
+        C880 | [NÃO ENCONTRADO]
+      C890 | [NÃO ENCONTRADO]
+  C895 | [NÃO ENCONTRADO]
+        C897 | [NÃO ENCONTRADO]
+C990 | sped_fiscal/3 - Bloco C/C990
+
+================================================================================
+4 - Bloco D
+================================================================================
+
+D001 | sped_fiscal/4 - Bloco D/D001
+    D100 | sped_fiscal/4 - Bloco D/D001/D100
+      D101 | sped_fiscal/4 - Bloco D/D001/D100/D101
+  D110 | [NÃO ENCONTRADO]
+  D120 | [NÃO ENCONTRADO]
+      D130 | [NÃO ENCONTRADO]
+      D140 | [NÃO ENCONTRADO]
+  D150 | [NÃO ENCONTRADO]
+  D160 | [NÃO ENCONTRADO]
+  D161 | [NÃO ENCONTRADO]
+  D162 | [NÃO ENCONTRADO]
+  D170 | [NÃO ENCONTRADO]
+  D180 | [NÃO ENCONTRADO]
+  D190 | [NÃO ENCONTRADO]
+      D195 | [NÃO ENCONTRADO]
+        D197 | [NÃO ENCONTRADO]
+    D300 | [NÃO ENCONTRADO]
+      D301 | [NÃO ENCONTRADO]
+      D310 | [NÃO ENCONTRADO]
+    D350 | [NÃO ENCONTRADO]
+      D355 | [NÃO ENCONTRADO]
+        D360 | [NÃO ENCONTRADO]
+        D365 | [NÃO ENCONTRADO]
+          D370 | [NÃO ENCONTRADO]
+        D390 | [NÃO ENCONTRADO]
+    D400 | [NÃO ENCONTRADO]
+      D410 | [NÃO ENCONTRADO]
+        D411 | [NÃO ENCONTRADO]
+      D420 | [NÃO ENCONTRADO]
+    D500 | [NÃO ENCONTRADO]
+      D510 | [NÃO ENCONTRADO]
+      D530 | [NÃO ENCONTRADO]
+      D590 | [NÃO ENCONTRADO]
+    D600 | [NÃO ENCONTRADO]
+      D610 | [NÃO ENCONTRADO]
+      D690 | [NÃO ENCONTRADO]
+    D695 | [NÃO ENCONTRADO]
+      D696 | [NÃO ENCONTRADO]
+        D697 | [NÃO ENCONTRADO]
+    D700 | [NÃO ENCONTRADO]
+      D730 | [NÃO ENCONTRADO]
+        D731 | [NÃO ENCONTRADO]
+      D735 | [NÃO ENCONTRADO]
+        D737 | [NÃO ENCONTRADO]
+    D750 | [NÃO ENCONTRADO]
+      D760 | [NÃO ENCONTRADO]
+        D761 | [NÃO ENCONTRADO]
+D990 | sped_fiscal/4 - Bloco D/D990
+
+================================================================================
+5 - Bloco E
+================================================================================
+
+E001 | sped_fiscal/5 - Bloco E/E001
+    E100 | sped_fiscal/5 - Bloco E/E001/E100
+      E110 | sped_fiscal/5 - Bloco E/E001/E100/E110
+        E111 | sped_fiscal/5 - Bloco E/E001/E100/E110/E111
+          E112 | sped_fiscal/5 - Bloco E/E001/E100/E110/E111/E112
+          E113 | [NÃO ENCONTRADO]
+        E115 | [NÃO ENCONTRADO]
+        E116 | [NÃO ENCONTRADO]
+    E200 | sped_fiscal/5 - Bloco E/E001/E100/E200
+      E210 | sped_fiscal/5 - Bloco E/E001/E100/E200/E210
+        E220 | sped_fiscal/5 - Bloco E/E001/E100/E200/E210/E220
+          E230 | sped_fiscal/5 - Bloco E/E001/E100/E200/E210/E220/E230
+          E240 | sped_fiscal/5 - Bloco E/E001/E100/E200/E210/E220/E240
+        E250 | [NÃO ENCONTRADO]
+    E300 | sped_fiscal/5 - Bloco E/E001/E100/E300
+      E310 | sped_fiscal/5 - Bloco E/E001/E100/E300/E310
+        E311 | sped_fiscal/5 - Bloco E/E001/E100/E300/E310/E311
+          E312 | sped_fiscal/5 - Bloco E/E001/E100/E300/E310/E311/E312
+          E313 | sped_fiscal/5 - Bloco E/E001/E100/E300/E310/E311/E313
+        E316 | sped_fiscal/5 - Bloco E/E001/E100/E300/E310/E316
+    E500 | sped_fiscal/5 - Bloco E/E001/E100/E500
+      E510 | sped_fiscal/5 - Bloco E/E001/E100/E500/E510
+      E520 | sped_fiscal/5 - Bloco E/E001/E100/E500/E520
+        E530 | sped_fiscal/5 - Bloco E/E001/E100/E500/E520/E530
+          E531 | sped_fiscal/5 - Bloco E/E001/E100/E500/E520/E530/E531
+E990 | sped_fiscal/5 - Bloco E/E990
+
+================================================================================
+6 - Bloco G
+================================================================================
+
+G001 | sped_fiscal/6 - Bloco G/G001
+G990 | sped_fiscal/6 - Bloco G/G990
+
+================================================================================
+7 - Bloco H
+================================================================================
+
+H001 | sped_fiscal/7 - Bloco H/H001
+    H005 | sped_fiscal/7 - Bloco H/H001/H005
+      H010 | sped_fiscal/7 - Bloco H/H001/H005/H010
+        H020 | sped_fiscal/7 - Bloco H/H001/H005/H010/H020
+        H030 | sped_fiscal/7 - Bloco H/H001/H005/H010/H020/H030 - Informações complementar
+H990 | sped_fiscal/7 - Bloco H/H990
+
+================================================================================
+8 - Bloco K
+================================================================================
+
+K001 | sped_fiscal/8 - Bloco K/K001
+    K010 | sped_fiscal/8 - Bloco K/K001/K010
+    K100 | sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI
+      K200 | sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K200 - Estoque Escri
+      K210 | sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K210 - Desmontagem d
+        K215 | [NÃO ENCONTRADO]
+      K220 | sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K220 - Outras Movime
+      K230 | sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K230 - Itens Produzi
+        K235 | [NÃO ENCONTRADO]
+      K250 | sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K250 - Industrializa
+        K255 | [NÃO ENCONTRADO]
+      K260 | sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K260 - Reprocessamen
+        K265 | [NÃO ENCONTRADO]
+      K270 | sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K270 - Correção de a
+        K275 | [NÃO ENCONTRADO]
+      K280 | sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K280 - Correção de a
+      K290 | sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K290 - Produção conj
+        K291 | [NÃO ENCONTRADO]
+        K292 | [NÃO ENCONTRADO]
+      K300 | sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K300 - Produção conj
+        K301 | [NÃO ENCONTRADO]
+        K302 | [NÃO ENCONTRADO]
+K990 | sped_fiscal/8 - Bloco K/K990
+
+================================================================================
+9 - Bloco 1
+================================================================================
+
+1001 | sped_fiscal/9 - Bloco 1/1001
+    1010 | sped_fiscal/9 - Bloco 1/1001/1010
+    1100 | sped_fiscal/9 - Bloco 1/1001/1010/1100 - Registro de Informações sobre Exportação
+      1105 | sped_fiscal/9 - Bloco 1/1001/1010/1100 - Registro de Informações sobre Exportação/1105 - Documentos Fiscais d
+      1110 | sped_fiscal/9 - Bloco 1/1001/1010/1100 - Registro de Informações sobre Exportação/1110 - Operações de Exporta
+    1200 | sped_fiscal/9 - Bloco 1/1001/1010/1200 - Controle de Créditos Fiscais - ICMS
+      1210 | sped_fiscal/9 - Bloco 1/1001/1010/1200 - Controle de Créditos Fiscais - ICMS/1210 - Utilização de Créditos Fi
+    1250 | sped_fiscal/9 - Bloco 1/1001/1010/1250 - Informações consolidadas de saldos de restituição, ressarcimento e c
+      1255 | [NÃO ENCONTRADO]
+    1300 | sped_fiscal/9 - Bloco 1/1001/1010/1300 - Movimentação diária de combustíveis
+      1310 | sped_fiscal/9 - Bloco 1/1001/1010/1300 - Movimentação diária de combustíveis/1310 - Movimentação diária de co
+        1320 | [NÃO ENCONTRADO]
+    1350 | sped_fiscal/9 - Bloco 1/1001/1010/1350 - Bombas
+      1360 | sped_fiscal/9 - Bloco 1/1001/1010/1350 - Bombas/1360 - Lacres das bombas
+      1370 | sped_fiscal/9 - Bloco 1/1001/1010/1350 - Bombas/1370 - Bicos da bomba
+    1390 | sped_fiscal/9 - Bloco 1/1001/1010/1390 - Controle de produção de Usina
+      1391 | sped_fiscal/9 - Bloco 1/1001/1010/1390 - Controle de produção de Usina/1391 - Produção diária da usina
+    1400 | sped_fiscal/9 - Bloco 1/1001/1010/1400 - Informação sobre Valor Agregado
+    1500 | sped_fiscal/9 - Bloco 1/1001/1010/1500 - Nota FiscalConta de energia elétrica (código 06) - Operações Interes
+      1510 | [NÃO ENCONTRADO]
+  1600 | sped_fiscal/9 - Bloco 1/1001/1600
+    1601 | [NÃO ENCONTRADO]
+    1700 | [NÃO ENCONTRADO]
+      1710 | [NÃO ENCONTRADO]
+    1800 | [NÃO ENCONTRADO]
+    1900 | [NÃO ENCONTRADO]
+      1910 | [NÃO ENCONTRADO]
+        1920 | [NÃO ENCONTRADO]
+          1921 | [NÃO ENCONTRADO]
+            1922 | [NÃO ENCONTRADO]
+            1923 | [NÃO ENCONTRADO]
+          1925 | [NÃO ENCONTRADO]
+          1926 | [NÃO ENCONTRADO]
+    1960 | [NÃO ENCONTRADO]
+    1970 | [NÃO ENCONTRADO]
+      1975 | [NÃO ENCONTRADO]
+    1980 | [NÃO ENCONTRADO]
+1990 | sped_fiscal/9 - Bloco 1/1990
+
+================================================================================
+10 - Bloco 9
+================================================================================
+
+9001 | sped_fiscal/10 - Bloco 9/9001
+9990 | sped_fiscal/10 - Bloco 9/9990

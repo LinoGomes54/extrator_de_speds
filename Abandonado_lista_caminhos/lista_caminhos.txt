@@ -1,0 +1,318 @@
+================================================================================
+LISTA DE CAMINHOS RELATIVOS PARA COPIAR
+================================================================================
+
+Formato: CÓDIGO | DESCRIÇÃO | CAMINHO RELATIVO
+
+================================================================================
+
+# 1 - Bloco 0
+
+0000 | Informações do contribuinte | sped_fiscal/1 - Bloco 0/0000
+0001 | abertura do Bloco 0 | sped_fiscal/1 - Bloco 0/0001
+    0002 | Classificação do estabelecimento industrial | sped_fiscal/1 - Bloco 0/0001/0002
+    0005 | Dados complementares da entidade | sped_fiscal/1 - Bloco 0/0005
+    0015 | Dados do contribuinte substituto ou responsável pelo ICMS de | sped_fiscal/1 - Bloco 0/0015
+    0100 | Dados do contabilista | sped_fiscal/1 - Bloco 0/0100
+    0150 | Tabela de cadastro do participante | sped_fiscal/1 - Bloco 0/0150
+      0175 | Alteração da Tabela de Cadastro de Participante | sped_fiscal/1 - Bloco 0/0150/0175
+    0190 | Identificação das Unidades de Medida | sped_fiscal/1 - Bloco 0/0190
+    0200 | Tabela de identificação do item (produto e serviços) | sped_fiscal/1 - Bloco 0/0200
+      0205 | Alteração do item | sped_fiscal/1 - Bloco 0/0200/0205
+      0206 | Código de produto conforme Tabela publicada pela ANP | sped_fiscal/1 - Bloco 0/0200/0206
+      0220 | Fatores de conversão de unidades | sped_fiscal/1 - Bloco 0/0200/0220
+      0221 | Correlação entre códigos de itens comercializados | sped_fiscal/1 - Bloco 0/0200/0221
+    0300 | Cadastro de bens ou componentes do Ativo Imobilizado | sped_fiscal/1 - Bloco 0/0300
+      0305 | Informação sobre a utilização do bem | sped_fiscal/1 - Bloco 0/0300/0305
+    0400 | Tabela de Natureza da Operação/Prestação | sped_fiscal/1 - Bloco 0/0400
+    0450 | Tabela de Informação Complementar do Documento Fiscal | sped_fiscal/1 - Bloco 0/0450
+    0460 | Tabela de Observações do Lançamento Fiscal | sped_fiscal/1 - Bloco 0/0460
+    0500 | Plano de Contas Contábeis | sped_fiscal/1 - Bloco 0/0500
+    0600 | Centro de Custos | sped_fiscal/1 - Bloco 0/0600
+0990 | Encerramento do Bloco 0 | sped_fiscal/1 - Bloco 0/0990
+
+--------------------------------------------------------------------------------
+
+# 2 - Bloco B
+
+B001 | Abertura Bloco B - Somente vigente no DF para apuração de IS | sped_fiscal/2 - Bloco B/B001
+    B020 | Nota Fiscal (código 01), Nota Fiscal de Serviços (código 03) | sped_fiscal/2 - Bloco B/B001/B020
+      B025 | Detalhamento por combinação de alíquota e item da lista de s | sped_fiscal/2 - Bloco B/B001/B025
+    B030 | Nota fiscal de Serviços Simplificada (código 3A) | sped_fiscal/2 - Bloco B/B001/B030
+    B035 | Detalhamento por combinação de alíquota e item da lista de s | sped_fiscal/2 - Bloco B/B001/B035
+    B350 | Serviços prestados por insituições financeiras | sped_fiscal/2 - Bloco B/B001/B350
+    B420 | Totalização dos valores de serviços prestados por combinação | sped_fiscal/2 - Bloco B/B001/B420
+    B440 | Totalização dos valores retidos | sped_fiscal/2 - Bloco B/B001/B440
+    B460 | Deduções do ISS | sped_fiscal/2 - Bloco B/B001/B460
+    B470 | Deduções do ISS | sped_fiscal/2 - Bloco B/B001/B470
+    B500 | Apuração do ISS sociedade uniprofissional | sped_fiscal/2 - Bloco B/B001/B500
+      B510 | Uniprofissional – empregados e sócios | sped_fiscal/2 - Bloco B/B001/B0510
+B990 | Fechamento Bloco B - Somente vigente no DF para apuração de  | sped_fiscal/2 - Bloco B/B990
+
+--------------------------------------------------------------------------------
+
+# 3 - Bloco C
+
+C001 | Abertura do Bloco C | sped_fiscal/3 - Bloco C/C001
+    C100 | Documento - Nota Fiscal (código 01), Nota Fiscal Avulsa (cód | sped_fiscal/3 - Bloco C/C001/C100
+      C101 | Informação complementar dos documentos fiscais quando das op | sped_fiscal/3 - Bloco C/C001/C100/C101
+      C105 | Operações com ICMS ST recolhido para UF diversa do destinatá | sped_fiscal/3 - Bloco C/C001/C100/C105
+      C110 | Complemento de Documento - Informação Complementar da Nota F | sped_fiscal/3 - Bloco C/C001/C100/C110
+        C111 | Complemento de Documento - Processo referenciado | sped_fiscal/3 - Bloco C/C001/C100/C110/C111
+        C112 | Complemento de Documento - Documento de Arrecadação Referenc | sped_fiscal/3 - Bloco C/C001/C100/C110/C112
+        C113 | Complemento de Documento - Documento Fiscal Referenciado | sped_fiscal/3 - Bloco C/C001/C100/C110/C113
+        C114 | Complemento de Documento - Cupom Fiscal Referenciado | sped_fiscal/3 - Bloco C/C001/C100/C110/C114
+        C115 | Local de coleta e/ou entrega (CÓDIGOS 01, 1B e 04) | [NÃO ENCONTRADO]
+        C116 | Cupom Fiscal Eletrônico - CF-e referenciado | [NÃO ENCONTRADO]
+      C120 | Complemento de Documento - Operações de Importação (código 0 | sped_fiscal/3 - Bloco C/C001/C120
+      C130 | Complemento de Documento - ISSQN, IRRF e Previdência Social | sped_fiscal/3 - Bloco C/C001/C130
+      C140 | Complemento de Documento - Fatura (código 01) | sped_fiscal/3 - Bloco C/C001/C140
+        C141 | Complemento de Documento - Vencimento da Fatura (código 01) | [NÃO ENCONTRADO]
+      C160 | Complemento de Documento - Volumes Transportados (código 01  | sped_fiscal/3 - Bloco C/C001/C160
+        C165 | Complemento de Documento - Operações com combustíveis (códig | [NÃO ENCONTRADO]
+      C170 | Complemento de Documento - Itens do Documento (código 01, 1B | sped_fiscal/3 - Bloco C/C001/C170
+        C171 | Complemento de Item - Armazenamento de Combustíveis (código  | sped_fiscal/3 - Bloco C/C001/C170/C171
+        C172 | Complemento de Item - Operações com ISSQN (código 01) | sped_fiscal/3 - Bloco C/C001/C170/C172
+        C173 | Complemento de Item - Operações com Medicamentos (código 01, | [NÃO ENCONTRADO]
+        C174 | Complemento de Item - Operações com Armas de Fogo (código 01 | [NÃO ENCONTRADO]
+        C175 | Complemento de Item - Operações com Veículos Novos (código 0 | [NÃO ENCONTRADO]
+        C176 | Complemento de Item - Ressarcimento de ICMS em operações com | [NÃO ENCONTRADO]
+        C177 | Complemento de Item - Operações com Produtos Sujeitos a Selo | [NÃO ENCONTRADO]
+        C178 | Complemento de Item - Operações com Produtos Sujeitos a Trib | [NÃO ENCONTRADO]
+        C179 | Complemento de Item - Informações Complementares ST (código  | [NÃO ENCONTRADO]
+        C180 | Informações complementares das operações de entrada de merca | [NÃO ENCONTRADO]
+        C181 | Informações complementares das operações de devolução de saí | [NÃO ENCONTRADO]
+      C185 | Informações complementares das operações de saída de mercado | sped_fiscal/3 - Bloco C/C001/C185
+      C186 | Informações complementares das operações de devolução de ent | sped_fiscal/3 - Bloco C/C001/C186
+      C190 | Registro Analítico do Documento (código 01, 1B, 04, 55 e 65) | sped_fiscal/3 - Bloco C/C001/C190
+        C191 | Informações do Fundo de Combate à Pobreza - FCP - na NF-e (c | sped_fiscal/3 - Bloco C/C001/C190/C191
+      C195 | Complemento do Registro Analítico - Observações do Lançament | sped_fiscal/3 - Bloco C/C001/C195
+        C197 | Outras Obrigações Tributárias, Ajustes e Informações proveni | sped_fiscal/3 - Bloco C/C001/C195/C197
+    C300 | Documento - Resumo Diário das Notas Fiscais de Venda a Consu | sped_fiscal/3 - Bloco C/C001/C300
+    C310 | Documentos Cancelados de Nota Fiscal de Venda a Consumidor ( | sped_fiscal/3 - Bloco C/C001/C310
+    C320 | Registro Analítico das Notas Fiscais de Venda a Consumidor ( | sped_fiscal/3 - Bloco C/C001/C320
+      C321 | Itens dos Resumos Diários dos Documentos (código 02) | sped_fiscal/3 - Bloco C/C001/C320/C321
+        C330 | Informações complementares das operações de saída de mercado | [NÃO ENCONTRADO]
+    C350 | Nota Fiscal de venda a consumidor (código 02) | sped_fiscal/3 - Bloco C/C001/C350
+      C370 | Itens do documento (código 02) | sped_fiscal/3 - Bloco C/C001/C350/C370
+        C380 | Informações complementares das operações de saída de mercado | sped_fiscal/3 - Bloco C/C001/C350/C370/C380
+      C390 | Registro Analítico das Notas Fiscais de Venda a Consumidor ( | [NÃO ENCONTRADO]
+    C400 | Equipamento ECF (código 02, 2D e 60) | [NÃO ENCONTRADO]
+      C405 | Redução Z (código 02, 2D e 60) | [NÃO ENCONTRADO]
+        C410 | PIS e COFINS Totalizados no Dia (código 02 e 2D) | [NÃO ENCONTRADO]
+        C420 | Registro dos Totalizadores Parciais da Redução Z (código 02, | [NÃO ENCONTRADO]
+          C425 | Resumo de itens do movimento diário (código 02 e 2D) | [NÃO ENCONTRADO]
+            C430 | Informações complementares das operações de saída de mercado | [NÃO ENCONTRADO]
+        C460 | Documento Fiscal Emitido por ECF (código 02, 2D e 60) | [NÃO ENCONTRADO]
+          C465 | Complemento do Cupom Fiscal Eletrônico Emitido por ECF - CF- | [NÃO ENCONTRADO]
+          C470 | Itens do Documento Fiscal Emitido por ECF (código 02 e 2D) | [NÃO ENCONTRADO]
+            C480 | Informações complementares das operações de saída de mercado | [NÃO ENCONTRADO]
+        C490 | Registro Analítico do movimento diário (código 02, 2D e 60) | [NÃO ENCONTRADO]
+    C495 | Resumo Mensal de Itens do ECF por Estabelecimento (código 02 | sped_fiscal/3 - Bloco C/C001/C495
+    C500 | Nota Fiscal/Conta de Energia Elétrica (código 06), Nota Fisc | [NÃO ENCONTRADO]
+      C510 | Itens do Documento - Nota Fiscal/Conta de Energia Elétrica ( | [NÃO ENCONTRADO]
+      C590 | Registro Analítico do Documento - Nota Fiscal/Conta de Energ | [NÃO ENCONTRADO]
+        C591 | Informações do Fundo de Combate à Pobreza – FCP na NF3e (Cód | [NÃO ENCONTRADO]
+      C595 | Observações do lançamento fiscal (Códigos 06, 28, 29 e 66) | [NÃO ENCONTRADO]
+        C597 | Outras obrigações tributárias, ajustes e informações de valo | [NÃO ENCONTRADO]
+    C600 | Consolidação Diária de Notas Fiscais/Contas de Energia Elétr | sped_fiscal/3 - Bloco C/C001/C600
+      C601 | Documentos cancelados - Consolidação diária de notas fiscais | sped_fiscal/3 - Bloco C/C001/C600/C601
+      C610 | Itens do Documento Consolidado - Notas Fiscais/Contas de Ene | sped_fiscal/3 - Bloco C/C001/C600/C610
+      C690 | Registro Analítico dos Documentos - Notas Fiscais/Contas de  | sped_fiscal/3 - Bloco C/C001/C600/C690
+    C700 | Consolidação dos Documentos Nota Fiscal/Conta Energia Elétri | sped_fiscal/3 - Bloco C/C001/C700
+      C790 | Registro Analítico dos Documentos - Nota Fiscal/Conta Energi | sped_fiscal/3 - Bloco C/C001/C700/C790
+        C791 | Registro de Informações de ICMS ST por UF | sped_fiscal/3 - Bloco C/C001/C700/C790/C791
+    C800 | Registro Cupom Fiscal Eletrônico - CF-e (Código 59) | sped_fiscal/3 - Bloco C/C001/C800
+      C810 | Itens do documento do Cupom Fiscal Eletrônico – SAT (CFE-SAT | sped_fiscal/3 - Bloco C/C001/C800/C810
+        C815 | Informações complementares das operações de saída de mercado | sped_fiscal/3 - Bloco C/C001/C800/C810/C815
+      C850 | Registro analítico do CF-e-SAT (Código 59) | sped_fiscal/3 - Bloco C/C001/C800/C850
+      C855 | Observações do lançamento fiscal (Código 59) | sped_fiscal/3 - Bloco C/C001/C800/C855
+        C857 | Outras obrigações tributárias, ajustes e informações de valo | sped_fiscal/3 - Bloco C/C001/C800/C855/C857
+    C860 | Identificação do Equipamento SAT-CF-e | sped_fiscal/3 - Bloco C/C001/C860
+      C870 | Itens do resumo diário dos documentos (CF-E-SAT) (Código 59) | sped_fiscal/3 - Bloco C/C001/C860/C870
+        C880 | Informações complementares das operações de saída de mercado | sped_fiscal/3 - Bloco C/C001/C860/C870/C880
+      C890 | Resumo Diário do CF-e-SAT (Código 59) por Equipamento SAT-CF | sped_fiscal/3 - Bloco C/C001/C860/C890
+      C895 | Registro C895 da EFD-ICMS/IPI - Observações do lançamento fi | [NÃO ENCONTRADO]
+        C897 | Outras obrigações tributárias, ajustes e informações de valo | [NÃO ENCONTRADO]
+C990 | Encerramento do Bloco C | sped_fiscal/3 - Bloco C/C990
+
+--------------------------------------------------------------------------------
+
+# 4 - Bloco D
+
+D001 | Abertura do Bloco D | sped_fiscal/4 - Bloco D/D001
+    D100 | Nota Fiscal de Serviço de Transporte (código 07) e Conhecime | sped_fiscal/4 - Bloco D/D001/D100
+      D101 | Informação complementar dos documentos fiscais quando das pr | sped_fiscal/4 - Bloco D/D001/D100/D101
+      D105
+  D110 | Itens do documento - Nota Fiscal de Serviços de Transporte ( | [NÃO ENCONTRADO]
+  D120 | Complemento da Nota Fiscal de Serviços de Transporte (código | [NÃO ENCONTRADO]
+      D130 | Complemento do Conhecimento Rodoviário de Cargas (código 08) | [NÃO ENCONTRADO]
+      D140 | Complemento do Conhecimento Aquaviário de Cargas (código 09) | [NÃO ENCONTRADO]
+  D150 | Complemento do Conhecimento Aéreo de Cargas (código 10) | [NÃO ENCONTRADO]
+  D160 | Carga Transportada (Código 08, 8B, 09, 10, 11, 26 E 27) | [NÃO ENCONTRADO]
+  D161 | Local de Coleta e Entrega (códigos 08, 8B, 09, 10, 11 e 26) | [NÃO ENCONTRADO]
+  D162 | Identificação dos documentos fiscais (código 08, 8B, 09, 10, | [NÃO ENCONTRADO]
+  D170 | Complemento do Conhecimento Multimodal de Cargas (código 26) | [NÃO ENCONTRADO]
+  D180 | Modais (código 26) | [NÃO ENCONTRADO]
+  D190 | Registro Analítico dos Documentos (Código 07, 08, 8B, 09, 10 | [NÃO ENCONTRADO]
+      D195 | Observações do lançamento (Código 07, 08, 8B, 09, 10, 11, 26 | [NÃO ENCONTRADO]
+        D197 | Outras obrigações tributárias, ajustes e informações de valo | [NÃO ENCONTRADO]
+    D300 | Registro Analítico dos bilhetes consolidados de Passagem Rod | sped_fiscal/4 - Bloco D/D001/D300
+      D301 | Documentos cancelados dos Bilhetes de Passagem Rodoviário (c | sped_fiscal/4 - Bloco D/D001/D300/D301
+      D310 | Complemento dos Bilhetes (código 13, código 14, código 15 e  | sped_fiscal/4 - Bloco D/D001/D300/D310
+    D350 | Equipamento ECF (Códigos 2E, 13, 14, 15 e 16) | sped_fiscal/4 - Bloco D/D001/D350
+      D355 | Redução Z (Códigos 2E, 13, 14, 15 e 16) | sped_fiscal/4 - Bloco D/D001/D350/D355
+        D360 | PIS E COFINS totalizados no dia (Códigos 2E, 13, 14, 15 e 16 | sped_fiscal/4 - Bloco D/D001/D350/D355/D360
+        D365 | Registro dos Totalizadores Parciais da Redução Z (Códigos 2E | sped_fiscal/4 - Bloco D/D001/D350/D355/D365
+          D370 | Complemento dos documentos informados (Códigos 13, 14, 15, 1 | sped_fiscal/4 - Bloco D/D001/D350/D355/D365/D370
+        D390 | Registro analítico do movimento diário (Códigos 13, 14, 15,  | sped_fiscal/4 - Bloco D/D001/D350/D355/D390
+    D400 | Resumo do Movimento Diário (código 18) | sped_fiscal/4 - Bloco D/D001/D400
+      D410 | Documentos Informados (Códigos 13, 14, 15 e 16) | sped_fiscal/4 - Bloco D/D001/D400/D410
+        D411 | Documentos Cancelados dos Documentos Informados (Códigos 13, | sped_fiscal/4 - Bloco D/D001/D400/D410/D411
+      D420 | Complemento dos Documentos Informados (Códigos 13, 14, 15 e  | sped_fiscal/4 - Bloco D/D001/D400/D420
+    D500 | Nota Fiscal de Serviço de Comunicação (código 21) e Serviço  | sped_fiscal/4 - Bloco D/D001/D500
+      D510 | Itens do Documento - Nota Fiscal de Serviço de Comunicação ( | sped_fiscal/4 - Bloco D/D001/D500/D510
+      D530 | Terminal Faturado | sped_fiscal/4 - Bloco D/D001/D500/D530
+      D590 | Registro Analítico do Documento (códigos 21 e 22) | sped_fiscal/4 - Bloco D/D001/D500/D590
+    D600 | Consolidação da Prestação de Serviços - Notas de Serviço de  | sped_fiscal/4 - Bloco D/D001/D600
+      D610 | Itens do Documento Consolidado (códigos 21 e 22) | sped_fiscal/4 - Bloco D/D001/D600/D610
+      D690 | Registro Analítico dos Documentos (códigos 21 e 22) | sped_fiscal/4 - Bloco D/D001/D600/D690
+    D695 | Consolidação da Prestação de Serviços - Notas de Serviço de  | sped_fiscal/4 - Bloco D/D001/D695
+      D696 | Registro Analítico dos Documentos (códigos 21 e 22) | sped_fiscal/4 - Bloco D/D001/D695/D696
+        D697 | Registro de informações de outras UFs, relativamente aos ser | sped_fiscal/4 - Bloco D/D001/D695/D696/D697
+    D700 | Nota Fiscal Fatura Eletrônica de serviços de comunicação - N | sped_fiscal/4 - Bloco D/D001/D700
+      D730 | Registro analítico Nota Fiscal Fatura Eletrônica de serviços | sped_fiscal/4 - Bloco D/D001/D700/D730
+        D731 | Informações do Fundo de Combate à Pobreza - FCP - (Código 62 | sped_fiscal/4 - Bloco D/D001/D700/D730/D731
+      D735 | Observações do lançamento fiscal (Código 62) | sped_fiscal/4 - Bloco D/D001/D700/D735
+        D737 | Outras obrigações tributárias, ajustes e informações de valo | sped_fiscal/4 - Bloco D/D001/D700/D735/D737
+    D750 | Escrituração consolidada da Nota Fiscal Fatura Eletrônica de | sped_fiscal/4 - Bloco D/D001/D750
+      D760 | Registro analítico da escrituração consolidada da Nota Fisca | sped_fiscal/4 - Bloco D/D001/D750/D760
+        D761 | Informações do Fundo de Combate à Pobreza – FCP – (Código 62 | sped_fiscal/4 - Bloco D/D001/D750/D760/D761
+D990 | Fechamento do Bloco D | sped_fiscal/4 - Bloco D/D990
+
+--------------------------------------------------------------------------------
+
+# 5 - Bloco E
+
+E001 | Abertura do Bloco E | sped_fiscal/5 - Bloco E/E001
+    E100 | Período de Apuração do ICMS | sped_fiscal/5 - Bloco E/E001/E100
+      E110 | Apuração do ICMS - Operações Próprias | sped_fiscal/5 - Bloco E/E001/E100/E110
+        E111 | Ajuste/Benefício/Incentivo da Apuração do ICMS | sped_fiscal/5 - Bloco E/E001/E100/E110/E111
+          E112 | Informações Adicionais dos Ajustes da Apuração do ICMS | sped_fiscal/5 - Bloco E/E001/E100/E110/E111/E112
+          E113 | Informações Adicionais dos Ajustes da Apuração do ICMS - Ide | [NÃO ENCONTRADO]
+        E115 | Informações Adicionais da Apuração do ICMS - Valores Declara | [NÃO ENCONTRADO]
+        E116 | Obrigações do ICMS Recolhido ou a Recolher - Obrigações Próp | [NÃO ENCONTRADO]
+    E200 | Período de Apuração do ICMS - Substituição Tributária | sped_fiscal/5 - Bloco E/E001/E100/E200
+      E210 | Apuração do ICMS - Substituição Tributária | sped_fiscal/5 - Bloco E/E001/E100/E200/E210
+        E220 | Ajuste/Benefício/Incentivo da Apuração do ICMS - Substituiçã | sped_fiscal/5 - Bloco E/E001/E100/E200/E210/E220
+          E230 | Informações Adicionais dos Ajustes da Apuração do ICMS Subst | sped_fiscal/5 - Bloco E/E001/E100/E200/E210/E220/E230
+          E240 | Informações Adicionais dos Ajustes da Apuração do ICMS Subst | sped_fiscal/5 - Bloco E/E001/E100/E200/E210/E220/E240
+        E250 | Obrigações do ICMS Recolhido ou a Recolher - Substituição Tr | [NÃO ENCONTRADO]
+    E300 | Período de Apuração do ICMS Diferencial de Alíquota - UF Ori | sped_fiscal/5 - Bloco E/E001/E100/E300
+      E310 | Apuração do ICMS Diferencial de Alíquota - UF Origem/Destino | sped_fiscal/5 - Bloco E/E001/E100/E300/E310
+        E311 | Ajuste/Benefício/Incentivo da Apuração do ICMS Diferencial d | sped_fiscal/5 - Bloco E/E001/E100/E300/E310/E311
+          E312 | Informações Adicionais dos Ajustes da Apuração do ICMS Difer | sped_fiscal/5 - Bloco E/E001/E100/E300/E310/E311/E312
+          E313 | Informações Adicionais da Apuração do ICMS Diferencial de Al | sped_fiscal/5 - Bloco E/E001/E100/E300/E310/E311/E313
+        E316 | Obrigações do ICMS recolhido ou a recolher - Diferencial de  | sped_fiscal/5 - Bloco E/E001/E100/E300/E310/E316
+    E500 | Período de Apuração do IPI | sped_fiscal/5 - Bloco E/E001/E100/E500
+      E510 | Consolidação dos Valores de IPI | sped_fiscal/5 - Bloco E/E001/E100/E500/E510
+      E520 | Apuração do IPI | sped_fiscal/5 - Bloco E/E001/E100/E500/E520
+        E530 | Ajustes da Apuração do IPI | sped_fiscal/5 - Bloco E/E001/E100/E500/E520/E530
+          E531 | Informações adicionais dos ajustes da apuração do IPI - Iden | sped_fiscal/5 - Bloco E/E001/E100/E500/E520/E530/E531
+E990 | Fechamento do Bloco E | sped_fiscal/5 - Bloco E/E990
+
+--------------------------------------------------------------------------------
+
+# 6 - Bloco G
+
+G001 | Abertura do Bloco G | sped_fiscal/6 - Bloco G/G001
+G990 | Fechamento do Bloco G | sped_fiscal/6 - Bloco G/G990
+
+--------------------------------------------------------------------------------
+
+# 7 - Bloco H
+
+H001 | Abertura do Bloco H | sped_fiscal/7 - Bloco H/H001
+    H005 | Totais do Inventário | sped_fiscal/7 - Bloco H/H001/H005
+      H010 | Inventário | sped_fiscal/7 - Bloco H/H001/H005/H010
+        H020 | Informação complementar do Inventário | sped_fiscal/7 - Bloco H/H001/H005/H010/H020
+        H030 | Informações complementares do inventário das mercadorias suj | sped_fiscal/7 - Bloco H/H001/H005/H010/H020/H030 - Informações complementar
+H990 | Fechamento do Bloco H | sped_fiscal/7 - Bloco H/H990
+
+--------------------------------------------------------------------------------
+
+# 8 - Bloco K
+
+K001 | Abertura do Bloco K | sped_fiscal/8 - Bloco K/K001
+    K010 | Informação sobre o tipo de leiaute (simplificado / completo) | sped_fiscal/8 - Bloco K/K001/K010
+    K100 | Período de Apuração do ICMS/IPI | sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI
+      K200 | Estoque Escriturado | sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K200 - Estoque Escri
+      K210 | Desmontagem de mercadorias - Item de origem | sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K210 - Desmontagem d
+        K215 | Desmontagem de mercadorias - Item de destino | [NÃO ENCONTRADO]
+      K220 | Outras Movimentações Internas entre Mercadorias | sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K220 - Outras Movime
+      K230 | Itens Produzidos | sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K230 - Itens Produzi
+        K235 | Insumos Consumidos | [NÃO ENCONTRADO]
+      K250 | Industrialização Efetuada por Terceiros - Itens Produzidos | sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K250 - Industrializa
+        K255 | Industrialização em Terceiros - Insumos Consumidos | [NÃO ENCONTRADO]
+      K260 | Reprocessamento/reparo de produto/insumo | sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K260 - Reprocessamen
+        K265 | Reprocessamento/reparo - Mercadorias consumidas e/ou retorna | [NÃO ENCONTRADO]
+      K270 | Correção de apontamento dos Registros K210, K220, K230, K250 | sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K270 - Correção de a
+        K275 | Correção de apontamento e retorno de insumos dos Registros K | [NÃO ENCONTRADO]
+      K280 | Correção de apontamento - Estoque escriturado | sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K280 - Correção de a
+      K290 | Produção conjunta - Ordem de Produção | sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K290 - Produção conj
+        K291 | Produção conjunta - Itens produzidos | [NÃO ENCONTRADO]
+        K292 | Produção conjunta - Insumos consumidos | [NÃO ENCONTRADO]
+      K300 | Produção conjunta - Industrialização efetuada por terceiros | sped_fiscal/8 - Bloco K/K001/K010/K100 - Período de Apuração do ICMSIPI/K300 - Produção conj
+        K301 | Produção conjunta - Industrialização efetuada por terceiros  | [NÃO ENCONTRADO]
+        K302 | Produção conjunta - Industrialização efetuada por terceiros  | [NÃO ENCONTRADO]
+K990 | Fechamento do Bloco K | sped_fiscal/8 - Bloco K/K990
+
+--------------------------------------------------------------------------------
+
+# 9 - Bloco 1
+
+1001 | Abertura do Bloco 1 | sped_fiscal/9 - Bloco 1/1001
+    1010 | Obrigatoriedade de registros do Bloco 1 | sped_fiscal/9 - Bloco 1/1001/1010
+    1100 | Registro de Informações sobre Exportação | sped_fiscal/9 - Bloco 1/1001/1010/1100 - Registro de Informações sobre Exportação
+      1105 | Documentos Fiscais de Exportação | sped_fiscal/9 - Bloco 1/1001/1010/1100 - Registro de Informações sobre Exportação/1105 - Documentos Fiscais d
+      1110 | Operações de Exportação Indireta - Mercadorias de terceiros | sped_fiscal/9 - Bloco 1/1001/1010/1100 - Registro de Informações sobre Exportação/1110 - Operações de Exporta
+    1200 | Controle de Créditos Fiscais - ICMS | sped_fiscal/9 - Bloco 1/1001/1010/1200 - Controle de Créditos Fiscais - ICMS
+      1210 | Utilização de Créditos Fiscais - ICMS | sped_fiscal/9 - Bloco 1/1001/1010/1200 - Controle de Créditos Fiscais - ICMS/1210 - Utilização de Créditos Fi
+    1250 | Informações consolidadas de saldos de restituição, ressarcim | sped_fiscal/9 - Bloco 1/1001/1010/1250 - Informações consolidadas de saldos de restituição, ressarcimento e c
+      1255 | Informações consolidadas de saldos de restituição, ressarcim | [NÃO ENCONTRADO]
+    1300 | Movimentação diária de combustíveis | sped_fiscal/9 - Bloco 1/1001/1010/1300 - Movimentação diária de combustíveis
+      1310 | Movimentação diária de combustíveis por tanque | sped_fiscal/9 - Bloco 1/1001/1010/1300 - Movimentação diária de combustíveis/1310 - Movimentação diária de co
+        1320 | Volume de vendas | [NÃO ENCONTRADO]
+    1350 | Bombas | sped_fiscal/9 - Bloco 1/1001/1010/1350 - Bombas
+      1360 | Lacres das bombas | sped_fiscal/9 - Bloco 1/1001/1010/1350 - Bombas/1360 - Lacres das bombas
+      1370 | Bicos da bomba | sped_fiscal/9 - Bloco 1/1001/1010/1350 - Bombas/1370 - Bicos da bomba
+    1390 | Controle de produção de Usina | sped_fiscal/9 - Bloco 1/1001/1010/1390 - Controle de produção de Usina
+      1391 | Produção diária da usina | sped_fiscal/9 - Bloco 1/1001/1010/1390 - Controle de produção de Usina/1391 - Produção diária da usina
+    1400 | Informação sobre Valor Agregado | sped_fiscal/9 - Bloco 1/1001/1010/1400 - Informação sobre Valor Agregado
+    1500 | Nota Fiscal/Conta de energia elétrica (código 06) - Operaçõe | sped_fiscal/9 - Bloco 1/1001/1010/1500 - Nota FiscalConta de energia elétrica (código 06) - Operações Interes
+      1510 | Itens do documento Nota Fiscal/Conta de energia elétrica (có | [NÃO ENCONTRADO]
+  1600 | Total das operações com cartão de crédito e/ou débito | sped_fiscal/9 - Bloco 1/1001/1600
+    1601 | Operações com instrumentos de pagamentos eletrônicos | [NÃO ENCONTRADO]
+    1700 | Documentos fiscais utilizados | [NÃO ENCONTRADO]
+      1710 | Documentos fiscais cancelados/inutilizados | [NÃO ENCONTRADO]
+    1800 | DCTA - Demonstrativo de crédito do ICMS sobre transporte aér | [NÃO ENCONTRADO]
+    1900 | Indicador de sub-apuração do ICMS | [NÃO ENCONTRADO]
+      1910 | Período da sub-apuração do ICMS | [NÃO ENCONTRADO]
+        1920 | Sub-apuração do ICMS | [NÃO ENCONTRADO]
+          1921 | Ajuste/benefício/incentivo da sub-apuração do ICMS | [NÃO ENCONTRADO]
+            1922 | Informações adicionais dos ajustes da sub-apuração do ICMS | [NÃO ENCONTRADO]
+            1923 | Informações adicionais dos ajustes da sub-apuração do ICMS - | [NÃO ENCONTRADO]
+          1925 | Informações adicionais da sub-apuração do ICMS - Valores dec | [NÃO ENCONTRADO]
+          1926 | Obrigações do ICMS a recolher - Operações referentes à sub-a | [NÃO ENCONTRADO]
+    1960 | Guia de Informação e Apuração de incentivos Fiscais e Financ | [NÃO ENCONTRADO]
+    1970 | GIAF 3 - Guia de Informação e Apuração de incentivos Fiscais | [NÃO ENCONTRADO]
+      1975 | Guia de Informação e Apuração de Incentivos Fiscais e Financ | [NÃO ENCONTRADO]
+    1980 | GIAF 4 - Guia de Informação e Apuração de Incentivos Fiscais | [NÃO ENCONTRADO]
+1990 | Fechamento do Bloco 1 | sped_fiscal/9 - Bloco 1/1990
+
+--------------------------------------------------------------------------------
+
+# 10 - Bloco 9
+
+9001 | Abertura do Bloco 9 | sped_fiscal/10 - Bloco 9/9001
+9990 | Fechamento do Bloco 9 | sped_fiscal/10 - Bloco 9/9990
